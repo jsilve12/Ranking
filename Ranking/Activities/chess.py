@@ -47,23 +47,45 @@ class Lichess:
             context=CTX)
         round_results = BeautifulSoup(result, 'html.parser')
 
-        # Get all team names
-        for team in round_results.find_all('a'):
+        # Get all team names TODO: Fix round ordering
+        round_results_ordered = sorted(
+            [round_result.get('href', '')
+             for round_result in round_results.find_all('a')
+             if re.fullmatch('/team4545/season/[0-9]+/round/[0-9]+/pairings/',
+                             round_result.get('href', ''))],
+            key=lambda x: int(x.split('/')[5]))
+        print(round_results_ordered)
+        for team in round_results_ordered:
             # Get the round results
-            if re.fullmatch('/team4545/season/[0-9]+/round/[0-9]+/pairings/', team.get('href', '')):
-                opponents = BeautifulSoup(request.urlopen(
-                    f"{LICHESS4545_URL}{team.get('href')}",
-                    context=CTX),
-                    'html.parser'
+            opponents = BeautifulSoup(request.urlopen(
+                f"{LICHESS4545_URL}{team}",
+                context=CTX),
+                'html.parser'
+            )
+            # Collect the round results
+            tournament_name = f"Round {team.split('/')[5]}"
+            self.season.create_tournament(tournament_name)
+            team_names = [opponent.get_text().strip()
+                          for opponent in opponents.find_all('a', {'class': 'team-link'}
+                          )]
+            results = [fancy_fractions(score.get_text().strip())
+                       for score in opponents.find_all('th', {'class': 'cell-score'}
+                       )]
+            # Insert the round results into the season
+            for i in range(int(len(team_names)/2)):
+                self.season.create_round(
+                    team_names[2*i],
+                    team_names[2*i+1],
+                    results[2*i],
+                    results[2*i] + results[2*i+1],
+                    tournament_name
                 )
-                print(team.get('href').split('/')[5])
-                print([opponent.get_text().strip() for opponent in opponents.find_all(
-                    'a', {'class': 'team-link'}
-                )])
-                print([fancy_fractions(score.get_text().strip()) for score in opponents.find_all(
-                    'th', {'class': 'cell-score'}
-                )])
-                print(opponents.find_all('time').datetime)
+            self.season.calculate_elo(tournament_name)
+            self.season.glicko()
+        results = [(team_name, team.elo, team.history) for team_name, team in self.season.teams.items()]
+        results = sorted(results, key=lambda x: x[1])
+        print(results)
+        #print([timestamp['datetime'] for timestamp in opponents.find_all('time')])
 
 def main():
     chess = Lichess(21)
