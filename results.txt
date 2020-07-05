@@ -1,0 +1,2118 @@
+[
+    [
+        "Quarantine Gambit Accepted",
+        1829.9152625218878,
+        {
+            "Pawndemics": {
+                "score": 0.75,
+                "elo_change": 105.30884316002,
+                "glicko": 100
+            },
+            "Prepare to be Homeschooled": {
+                "score": 0.625,
+                "elo_change": 23.547692618279427,
+                "glicko": 102.21496331950719
+            },
+            "Radjabov Was Right": {
+                "score": 0.4375,
+                "elo_change": -44.067980937920765,
+                "glicko": 99.08528717391948
+            },
+            "Caruanavirus": {
+                "score": 0.6875,
+                "elo_change": 2.2397130596976043,
+                "glicko": 96.22029127692396
+            },
+            "The Poisoned Pawns": {
+                "score": 0.8125,
+                "elo_change": 105.54885071083547,
+                "glicko": 93.93149394976182
+            },
+            "Chicken Chess Club": {
+                "score": 0.5,
+                "elo_change": 5.63370942705071,
+                "glicko": 91.52260985042928
+            },
+            "Chess Confinement Team": {
+                "score": 0.625,
+                "elo_change": 11.692890728534271,
+                "glicko": 89.3095135883785
+            },
+            "Self-Isolated Pawns": {
+                "score": 0.875,
+                "elo_change": 120.01154375539137,
+                "glicko": 87.33773108328342
+            }
+        }
+    ],
+    [
+        "Unstoppable Candidates",
+        1793.8061264145288,
+        {
+            "Blunderstruck": {
+                "score": 0.625,
+                "elo_change": 52.65442158001,
+                "glicko": 100
+            },
+            "The Poisoned Pawns": {
+                "score": 0.6875,
+                "elo_change": 82.09055129868723,
+                "glicko": 102.21496331950719
+            },
+            "Castled Kings": {
+                "score": 0.375,
+                "elo_change": -39.54536784969052,
+                "glicko": 99.02385979791663
+            },
+            "The Socially Isolated Pawns": {
+                "score": 0.75,
+                "elo_change": 43.66933024848817,
+                "glicko": 96.15321817344969
+            },
+            "Armed Grobbery": {
+                "score": 0.5,
+                "elo_change": -5.492081786108785,
+                "glicko": 93.73277320565401
+            },
+            "Radjabov Was Right": {
+                "score": 0.5625,
+                "elo_change": 66.22979510470162,
+                "glicko": 91.33324284040236
+            },
+            "Self-Isolated Pawns": {
+                "score": 0.7142857142857143,
+                "elo_change": 110.44874050935343,
+                "glicko": 89.25837967807787
+            },
+            "Chicken Chess Club": {
+                "score": 0.5625,
+                "elo_change": -16.24926269091233,
+                "glicko": 87.40351951503519
+            }
+        }
+    ],
+    [
+        "Castled Kings",
+        1787.546600901972,
+        {
+            "Wiping with our scoresheets": {
+                "score": 0.625,
+                "elo_change": 52.65442158001,
+                "glicko": 100
+            },
+            "We will quarantine your King": {
+                "score": 0.5625,
+                "elo_change": 103.68601596064292,
+                "glicko": 102.21496331950719
+            },
+            "Unstoppable Candidates": {
+                "score": 0.625,
+                "elo_change": 39.80446974764878,
+                "glicko": 99.3838420584594
+            },
+            "R to D2": {
+                "score": 0.75,
+                "elo_change": 40.77271632205231,
+                "glicko": 96.47906365681553
+            },
+            "Chess Confinement Team": {
+                "score": 0.375,
+                "elo_change": -111.14299681527068,
+                "glicko": 94.05464612502824
+            },
+            "Something Wicked This Way Comes": {
+                "score": 0.8125,
+                "elo_change": 108.4527446969511,
+                "glicko": 91.88511596641234
+            },
+            "Radjabov Was Right": {
+                "score": 0.75,
+                "elo_change": 50.51192966229662,
+                "glicko": 89.64141565681261
+            },
+            "Armed Grobbery": {
+                "score": 0.6875,
+                "elo_change": 2.807299747641035,
+                "glicko": 87.66516625775708
+            }
+        }
+    ],
+    [
+        "Chicken Chess Club",
+        1744.2348242265114,
+        {
+            "Self-Isolated Pawns": {
+                "score": 0.4375,
+                "elo_change": -26.327210790005,
+                "glicko": 100
+            },
+            "Conquerors of the 64 Squares": {
+                "score": 0.625,
+                "elo_change": 101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "Alice in Blunderland": {
+                "score": 0.625,
+                "elo_change": 19.601000919712828,
+                "glicko": 99.15993526124673
+            },
+            "We will quarantine your King": {
+                "score": 0.625,
+                "elo_change": 67.87736769250884,
+                "glicko": 96.3334776189877
+            },
+            "Alpha Pack": {
+                "score": 0.625,
+                "elo_change": 41.286617011860066,
+                "glicko": 93.72465397011531
+            },
+            "Quarantine Gambit Accepted": {
+                "score": 0.5,
+                "elo_change": -5.612964268040164,
+                "glicko": 91.32592898739391
+            },
+            "e2 brute": {
+                "score": 0.625,
+                "elo_change": 29.73584603303327,
+                "glicko": 89.1290103629009
+            },
+            "Unstoppable Candidates": {
+                "score": 0.4375,
+                "elo_change": 16.16180007588517,
+                "glicko": 87.11796452458125
+            }
+        }
+    ],
+    [
+        "e2 brute",
+        1708.6235158113084,
+        {
+            "Queen's Covid Declined": {
+                "score": 0.5625,
+                "elo_change": 26.327210790005,
+                "glicko": 100
+            },
+            "The Winawer takes it all": {
+                "score": 0.5625,
+                "elo_change": -19.133850252408163,
+                "glicko": 102.21496331950719
+            },
+            "GOKUBA Is God": {
+                "score": 0.6875,
+                "elo_change": 114.74051668418784,
+                "glicko": 99.15993526124673
+            },
+            "Self-Isolated Pawns": {
+                "score": 0.4375,
+                "elo_change": 69.67870098664419,
+                "glicko": 96.35267514686005
+            },
+            "Something Wicked This Way Comes": {
+                "score": 0.5,
+                "elo_change": -74.31021190077747,
+                "glicko": 94.28593450511747
+            },
+            "Prepare to be Homeschooled": {
+                "score": 0.6875,
+                "elo_change": 53.22142077631339,
+                "glicko": 92.19003103585226
+            },
+            "Chicken Chess Club": {
+                "score": 0.375,
+                "elo_change": -30.23248178088815,
+                "glicko": 89.93440576507315
+            },
+            "Radjabov Was Right": {
+                "score": 0.75,
+                "elo_change": 68.33221050823164,
+                "glicko": 87.8598867649792
+            }
+        }
+    ],
+    [
+        "R\u00e9ti Or Not Here We Come",
+        1703.7598277603906,
+        {
+            "Caro le Baskin Kann Kill": {
+                "score": 0.25,
+                "elo_change": -105.30884316002,
+                "glicko": 100
+            },
+            "Blunderstruck": {
+                "score": 0.4375,
+                "elo_change": 3.8591306094013516,
+                "glicko": 102.21496331950719
+            },
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.5625,
+                "elo_change": 10.974836163897214,
+                "glicko": 99.08528717391948
+            },
+            "She Said She Was 1800": {
+                "score": 0.75,
+                "elo_change": 113.02833258860963,
+                "glicko": 96.21352280452864
+            },
+            "We will quarantine your King": {
+                "score": 0.75,
+                "elo_change": 113.40118831613718,
+                "glicko": 93.60716480705399
+            },
+            "Alpha Pack": {
+                "score": 0.5625,
+                "elo_change": 9.767677476271446,
+                "glicko": 91.24168258098474
+            },
+            "flattening the eval": {
+                "score": 0.75,
+                "elo_change": 51.74273412570201,
+                "glicko": 89.0600091829675
+            },
+            "Chess Confinement Team": {
+                "score": 0.625,
+                "elo_change": 6.294771640391673,
+                "glicko": 87.1193079882724
+            }
+        }
+    ],
+    [
+        "You Tal-king to Me?",
+        1688.7452286506254,
+        {
+            "DeepFlue": {
+                "score": 0.5625,
+                "elo_change": 26.327210790005,
+                "glicko": 100
+            },
+            "captures captures captures": {
+                "score": 0.75,
+                "elo_change": 48.56005999639164,
+                "glicko": 102.21496331950719
+            },
+            "Wiping with our scoresheets": {
+                "score": 0.5,
+                "elo_change": -66.75971006614387,
+                "glicko": 99.26061554530763
+            },
+            "Chess Confinement Team": {
+                "score": 0.4375,
+                "elo_change": 57.414736754413624,
+                "glicko": 96.63913497920245
+            },
+            "The Socially Isolated Pawns": {
+                "score": 0.5625,
+                "elo_change": -36.29944963761592,
+                "glicko": 94.4114414955526
+            },
+            "Pawns Are People Too": {
+                "score": 0.5,
+                "elo_change": 0.5584156934122327,
+                "glicko": 92.18431508864754
+            },
+            "Armed Grobbery": {
+                "score": 0.4375,
+                "elo_change": 57.68488042772647,
+                "glicko": 89.91422106398855
+            },
+            "Weird Engine airLines": {
+                "score": 0.875,
+                "elo_change": 101.25908469243657,
+                "glicko": 88.24076256305534
+            }
+        }
+    ],
+    [
+        "Armed Grobbery",
+        1646.3064836871674,
+        {
+            "iyd0pXQi": {
+                "score": 0.5625,
+                "elo_change": 26.327210790005,
+                "glicko": 100
+            },
+            "The White Russians": {
+                "score": 0.8125,
+                "elo_change": 168.300069975486,
+                "glicko": 102.21496331950719
+            },
+            "Alpha Pack": {
+                "score": 0.375,
+                "elo_change": -89.46205214776634,
+                "glicko": 99.08528717391948
+            },
+            "GOKUBA Is God": {
+                "score": 0.75,
+                "elo_change": 23.059820460289195,
+                "glicko": 96.28882630443341
+            },
+            "Unstoppable Candidates": {
+                "score": 0.5,
+                "elo_change": 5.522076674702268,
+                "glicko": 94.03328318053984
+            },
+            "Pawndemics": {
+                "score": 0.8125,
+                "elo_change": 72.60296523108242,
+                "glicko": 91.60781953335888
+            },
+            "You Tal-king to Me?": {
+                "score": 0.5625,
+                "elo_change": -57.21697811038522,
+                "glicko": 89.49175115163507
+            },
+            "Castled Kings": {
+                "score": 0.3125,
+                "elo_change": -2.8266291862458464,
+                "glicko": 87.84565699872428
+            }
+        }
+    ],
+    [
+        "QUarantEEN Gambit Declined",
+        1619.49132228924,
+        {
+            "R to D2": {
+                "score": 0.625,
+                "elo_change": 52.65442158001,
+                "glicko": 100
+            },
+            "Radjabov Was Right": {
+                "score": 0.375,
+                "elo_change": -70.44358914207027,
+                "glicko": 102.21496331950719
+            },
+            "Pawndemics": {
+                "score": 0.5,
+                "elo_change": 7.9221196751872975,
+                "glicko": 99.03936201454046
+            },
+            "Blunderstruck": {
+                "score": 0.8125,
+                "elo_change": 100.20041494054341,
+                "glicko": 96.16173697331386
+            },
+            "Prepare to be Homeschooled": {
+                "score": 0.4375,
+                "elo_change": -51.407546860675275,
+                "glicko": 93.57946355955349
+            },
+            "Weird Engine airLines": {
+                "score": 0.4375,
+                "elo_change": -66.57304833174558,
+                "glicko": 91.24195673167658
+            },
+            "DeepFlue": {
+                "score": 0.5625,
+                "elo_change": 26.87566851332042,
+                "glicko": 89.17679835772644
+            },
+            "iyd0pXQi": {
+                "score": 0.875,
+                "elo_change": 120.26288191467034,
+                "glicko": 87.1525473459306
+            }
+        }
+    ],
+    [
+        "R to D2",
+        1617.263871300301,
+        {
+            "QUarantEEN Gambit Declined": {
+                "score": 0.375,
+                "elo_change": -52.65442158001,
+                "glicko": 100
+            },
+            "I believe I can flag": {
+                "score": 0.6875,
+                "elo_change": 50.9545158459602,
+                "glicko": 102.21496331950719
+            },
+            "Build That Stonewall": {
+                "score": 0.6875,
+                "elo_change": 86.98131583144709,
+                "glicko": 99.08528717391948
+            },
+            "Castled Kings": {
+                "score": 0.25,
+                "elo_change": -40.55112202485015,
+                "glicko": 96.20477042555164
+            },
+            "GOKUBA Is God": {
+                "score": 0.6875,
+                "elo_change": 15.250292309767197,
+                "glicko": 93.80325314698584
+            },
+            "The Poisoned Pawns": {
+                "score": 0.625,
+                "elo_change": -4.173009785831009,
+                "glicko": 91.5954236448158
+            },
+            "Caruanavirus": {
+                "score": 0.375,
+                "elo_change": -30.988976992236697,
+                "glicko": 89.5330605492652
+            },
+            "Alpha Pack": {
+                "score": 0.6428571428571429,
+                "elo_change": 92.44527769605429,
+                "glicko": 87.48861568149866
+            }
+        }
+    ],
+    [
+        "She Said She Was 1800",
+        1614.3975852366887,
+        {
+            "Will Resign for Toilet Paper": {
+                "score": 0.5,
+                "elo_change": 0.0,
+                "glicko": 100
+            },
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.5,
+                "elo_change": -31.265953837082126,
+                "glicko": 102.21496331950719
+            },
+            "Something Wicked This Way Comes": {
+                "score": 0.375,
+                "elo_change": -32.01416639588078,
+                "glicko": 99.08528717391948
+            },
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.25,
+                "elo_change": -113.05082413487507,
+                "glicko": 96.22434319302434
+            },
+            "Pawndemic Quaranqueen": {
+                "score": 0.6875,
+                "elo_change": 146.21659860115687,
+                "glicko": 93.61701386799395
+            },
+            "Team 1": {
+                "score": 0.625,
+                "elo_change": 54.45741171936996,
+                "glicko": 91.58834342299436
+            },
+            "Pawndemics": {
+                "score": 0.5,
+                "elo_change": -21.50191704568069,
+                "glicko": 89.37356017450595
+            },
+            "flattening the eval": {
+                "score": 0.8125,
+                "elo_change": 111.55643632968054,
+                "glicko": 87.36228189870084
+            }
+        }
+    ],
+    [
+        "Chess Confinement Team",
+        1613.322329397058,
+        {
+            "The Socially Isolated Pawns": {
+                "score": 0.625,
+                "elo_change": 52.65442158001,
+                "glicko": 100
+            },
+            "Build That Stonewall": {
+                "score": 0.5625,
+                "elo_change": 11.679737478502087,
+                "glicko": 102.21496331950719
+            },
+            "flattening the eval": {
+                "score": 0.6875,
+                "elo_change": 103.18558313492254,
+                "glicko": 99.03936201454046
+            },
+            "You Tal-king to Me?": {
+                "score": 0.5625,
+                "elo_change": -56.975773112876546,
+                "glicko": 96.19899122109882
+            },
+            "Castled Kings": {
+                "score": 0.625,
+                "elo_change": 111.04046225310118,
+                "glicko": 94.0051630151631
+            },
+            "Self-Isolated Pawns": {
+                "score": 0.25,
+                "elo_change": -90.11955931738002,
+                "glicko": 91.83949387622462
+            },
+            "Quarantine Gambit Accepted": {
+                "score": 0.375,
+                "elo_change": -11.769336182625725,
+                "glicko": 89.59810809495555
+            },
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.375,
+                "elo_change": -6.373206436595715,
+                "glicko": 87.60417462466347
+            }
+        }
+    ],
+    [
+        "Caruanavirus",
+        1604.9802566554404,
+        {
+            "Weird Engine airLines": {
+                "score": 0.6875,
+                "elo_change": 78.981632370015,
+                "glicko": 100
+            },
+            "Queen's Covid Declined": {
+                "score": 0.75,
+                "elo_change": 48.56005999639164,
+                "glicko": 102.21496331950719
+            },
+            "Self-Isolated Pawns": {
+                "score": 0.0625,
+                "elo_change": -181.71912245951611,
+                "glicko": 99.26061554530763
+            },
+            "Quarantine Gambit Accepted": {
+                "score": 0.3125,
+                "elo_change": -2.2541240651160734,
+                "glicko": 96.35796602701743
+            },
+            "Build That Stonewall": {
+                "score": 0.5625,
+                "elo_change": 93.46665855517655,
+                "glicko": 94.05818818465532
+            },
+            "Caro le Baskin Kann Kill": {
+                "score": 0.625,
+                "elo_change": 44.46654813535052,
+                "glicko": 91.93976038509457
+            },
+            "R to D2": {
+                "score": 0.625,
+                "elo_change": 31.08890058700448,
+                "glicko": 89.690083820717
+            },
+            "Wiping with our scoresheets": {
+                "score": 0.5625,
+                "elo_change": -7.610296463865639,
+                "glicko": 87.63323402087335
+            }
+        }
+    ],
+    [
+        "The White Russians",
+        1589.5879766199862,
+        {
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.6875,
+                "elo_change": 78.981632370015,
+                "glicko": 100
+            },
+            "Armed Grobbery": {
+                "score": 0.1875,
+                "elo_change": -168.300069975486,
+                "glicko": 102.21496331950719
+            },
+            "Will Resign for Toilet Paper": {
+                "score": 0.75,
+                "elo_change": 92.23054894490461,
+                "glicko": 99.08528717391948
+            },
+            "Something Wicked This Way Comes": {
+                "score": 0.4375,
+                "elo_change": -6.864660363102898,
+                "glicko": 96.20759263314076
+            },
+            "Pawns Are People Too": {
+                "score": 0.5,
+                "elo_change": 36.079105599065024,
+                "glicko": 93.60819404308572
+            },
+            "We will quarantine your King": {
+                "score": 0.4375,
+                "elo_change": -64.03883035492863,
+                "glicko": 91.30179090201666
+            },
+            "Blunderstruck": {
+                "score": 0.625,
+                "elo_change": 24.09603264677904,
+                "glicko": 89.21751611306125
+            },
+            "Prepare to be Homeschooled": {
+                "score": 0.8125,
+                "elo_change": 97.40421775274008,
+                "glicko": 87.21158907156038
+            }
+        }
+    ],
+    [
+        "Self-Isolated Pawns",
+        1580.4132230260443,
+        {
+            "Chicken Chess Club": {
+                "score": 0.5625,
+                "elo_change": 26.327210790005,
+                "glicko": 100
+            },
+            "Something Wicked This Way Comes": {
+                "score": 0.625,
+                "elo_change": 101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "Caruanavirus": {
+                "score": 0.9375,
+                "elo_change": 181.39310122650633,
+                "glicko": 99.15993526124673
+            },
+            "e2 brute": {
+                "score": 0.5625,
+                "elo_change": -69.57328489876592,
+                "glicko": 96.2668629681152
+            },
+            "Radjabov Was Right": {
+                "score": 0.5,
+                "elo_change": -17.337285096938366,
+                "glicko": 94.20632642849624
+            },
+            "Chess Confinement Team": {
+                "score": 0.75,
+                "elo_change": 90.02059176050099,
+                "glicko": 91.78336371103379
+            },
+            "Unstoppable Candidates": {
+                "score": 0.2857142857142857,
+                "elo_change": -111.08571687348517,
+                "glicko": 89.5466344631185
+            },
+            "Quarantine Gambit Accepted": {
+                "score": 0.125,
+                "elo_change": -120.84376143333493,
+                "glicko": 87.67085651217494
+            }
+        }
+    ],
+    [
+        "Alpha Pack",
+        1563.7182227470214,
+        {
+            "404 Name not found": {
+                "score": 0.5625,
+                "elo_change": 26.327210790005,
+                "glicko": 100
+            },
+            "Caro le Baskin Kann Kill": {
+                "score": 0.625,
+                "elo_change": 101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "Armed Grobbery": {
+                "score": 0.625,
+                "elo_change": 89.57892182720485,
+                "glicko": 99.15993526124673
+            },
+            "Radjabov Was Right": {
+                "score": 0.4375,
+                "elo_change": -65.68509076822252,
+                "glicko": 96.35658466859532
+            },
+            "Chicken Chess Club": {
+                "score": 0.375,
+                "elo_change": -41.37115493964954,
+                "glicko": 93.83112001531084
+            },
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.4375,
+                "elo_change": -9.804763260185057,
+                "glicko": 91.42322603535342
+            },
+            "Prepare to be Homeschooled": {
+                "score": 0.75,
+                "elo_change": 55.17378859645646,
+                "glicko": 89.2266998762956
+            },
+            "R to D2": {
+                "score": 0.35714285714285715,
+                "elo_change": -92.0130570501437,
+                "glicko": 87.2593363063329
+            }
+        }
+    ],
+    [
+        "The Poisoned Pawns",
+        1563.0802400873122,
+        {
+            "The Winawer takes it all": {
+                "score": 0.625,
+                "elo_change": 52.65442158001,
+                "glicko": 100
+            },
+            "Unstoppable Candidates": {
+                "score": 0.3125,
+                "elo_change": -82.09055129868723,
+                "glicko": 102.21496331950719
+            },
+            "iyd0pXQi": {
+                "score": 0.625,
+                "elo_change": 66.84211216172946,
+                "glicko": 99.02385979791663
+            },
+            "Conquerors of the 64 Squares": {
+                "score": 0.6875,
+                "elo_change": 25.93573876654457,
+                "glicko": 96.15818430466294
+            },
+            "Quarantine Gambit Accepted": {
+                "score": 0.1875,
+                "elo_change": -105.06290799918504,
+                "glicko": 93.69101131286001
+            },
+            "R to D2": {
+                "score": 0.375,
+                "elo_change": 4.1614640342184925,
+                "glicko": 91.30279053055837
+            },
+            "We will quarantine your King": {
+                "score": 0.4375,
+                "elo_change": 1.4433667139734512,
+                "glicko": 89.26292933737025
+            },
+            "Pawndemics": {
+                "score": 0.75,
+                "elo_change": 99.19659612870839,
+                "glicko": 87.26464076021018
+            }
+        }
+    ],
+    [
+        "Wiping with our scoresheets",
+        1557.8508827336732,
+        {
+            "Castled Kings": {
+                "score": 0.375,
+                "elo_change": -52.65442158001,
+                "glicko": 100
+            },
+            "Pawns Are People Too": {
+                "score": 0.6875,
+                "elo_change": 6.785564303637101,
+                "glicko": 102.21496331950719
+            },
+            "You Tal-king to Me?": {
+                "score": 0.5,
+                "elo_change": 66.89981216023834,
+                "glicko": 99.3838420584594
+            },
+            "Weird Engine airLines": {
+                "score": 0.6875,
+                "elo_change": 73.69085135618064,
+                "glicko": 96.75165841284827
+            },
+            "Pawndemics": {
+                "score": 0.5,
+                "elo_change": -45.12545618714725,
+                "glicko": 94.0827432463768
+            },
+            "The Socially Isolated Pawns": {
+                "score": 0.625,
+                "elo_change": 12.39151154185065,
+                "glicko": 91.78255738975054
+            },
+            "Caro le Baskin Kann Kill": {
+                "score": 0.5625,
+                "elo_change": -11.746705499947549,
+                "glicko": 89.61648053768491
+            },
+            "Caruanavirus": {
+                "score": 0.4375,
+                "elo_change": 7.609726638871011,
+                "glicko": 87.6289494117055
+            }
+        }
+    ],
+    [
+        "We will quarantine your King",
+        1548.011244517993,
+        {
+            "Pawns Are People Too": {
+                "score": 0.9375,
+                "elo_change": 184.29047553003502,
+                "glicko": 100
+            },
+            "Castled Kings": {
+                "score": 0.4375,
+                "elo_change": -103.68601596064286,
+                "glicko": 102.21496331950719
+            },
+            "DeepFlue": {
+                "score": 0.75,
+                "elo_change": 48.60690421102225,
+                "glicko": 99.3838420584594
+            },
+            "Chicken Chess Club": {
+                "score": 0.375,
+                "elo_change": -68.29238705953796,
+                "glicko": 96.66858185938128
+            },
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.25,
+                "elo_change": -114.31144843353131,
+                "glicko": 94.02960933807772
+            },
+            "The White Russians": {
+                "score": 0.5625,
+                "elo_change": 64.44009165579433,
+                "glicko": 91.6280420647043
+            },
+            "The Poisoned Pawns": {
+                "score": 0.5625,
+                "elo_change": -1.4456090012536746,
+                "glicko": 89.51816541563063
+            },
+            "Caro le Baskin Kann Kill": {
+                "score": 0.625,
+                "elo_change": 38.40923357610701,
+                "glicko": 87.50003457933684
+            }
+        }
+    ],
+    [
+        "Radjabov Was Right",
+        1539.6976661067647,
+        {
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.5625,
+                "elo_change": 26.327210790005,
+                "glicko": 100
+            },
+            "QUarantEEN Gambit Declined": {
+                "score": 0.625,
+                "elo_change": 70.44358914207027,
+                "glicko": 102.21496331950719
+            },
+            "Quarantine Gambit Accepted": {
+                "score": 0.5625,
+                "elo_change": 44.03262867243005,
+                "glicko": 99.03936201454046
+            },
+            "Alpha Pack": {
+                "score": 0.5625,
+                "elo_change": 65.47552716428785,
+                "glicko": 96.17869474617733
+            },
+            "Self-Isolated Pawns": {
+                "score": 0.5,
+                "elo_change": 17.169169011714033,
+                "glicko": 93.6686880902775
+            },
+            "Unstoppable Candidates": {
+                "score": 0.4375,
+                "elo_change": -66.17724125826686,
+                "glicko": 91.29186370187709
+            },
+            "Castled Kings": {
+                "score": 0.25,
+                "elo_change": -50.06994538186889,
+                "glicko": 89.22022063231174
+            },
+            "e2 brute": {
+                "score": 0.25,
+                "elo_change": -67.50327203360692,
+                "glicko": 87.27596792509698
+            }
+        }
+    ],
+    [
+        "captures captures captures",
+        1519.5441652895643,
+        {
+            "GOKUBA Is God": {
+                "score": 0.3125,
+                "elo_change": -78.981632370015,
+                "glicko": 100
+            },
+            "You Tal-king to Me?": {
+                "score": 0.25,
+                "elo_change": -48.560059996391665,
+                "glicko": 102.21496331950719
+            },
+            "The Winawer takes it all": {
+                "score": 0.375,
+                "elo_change": 0.3362936854197969,
+                "glicko": 99.26061554530763
+            },
+            "Queen's Covid Declined": {
+                "score": 0.75,
+                "elo_change": 106.46923705822923,
+                "glicko": 96.53282386686524
+            },
+            "Alice in Blunderland": {
+                "score": 0.5625,
+                "elo_change": -58.12615198558969,
+                "glicko": 93.88741556926742
+            },
+            "iyd0pXQi": {
+                "score": 0.4375,
+                "elo_change": -46.553874674739966,
+                "glicko": 91.90184274270148
+            },
+            "Build That Stonewall": {
+                "score": 0.875,
+                "elo_change": 181.82750056047166,
+                "glicko": 89.69249748536393
+            },
+            "Team 1": {
+                "score": 0.5625,
+                "elo_change": -36.867146987820306,
+                "glicko": 87.79589337192394
+            }
+        }
+    ],
+    [
+        "Blunderstruck",
+        1510.6432006286332,
+        {
+            "Unstoppable Candidates": {
+                "score": 0.375,
+                "elo_change": -52.65442158001,
+                "glicko": 100
+            },
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.5625,
+                "elo_change": -3.8591306094013516,
+                "glicko": 102.21496331950719
+            },
+            "Conquerors of the 64 Squares": {
+                "score": 0.5,
+                "elo_change": 4.338826660143817,
+                "glicko": 99.08528717391948
+            },
+            "QUarantEEN Gambit Declined": {
+                "score": 0.1875,
+                "elo_change": -100.27324897492656,
+                "glicko": 96.20050338829992
+            },
+            "flattening the eval": {
+                "score": 0.3125,
+                "elo_change": -1.6255082832959686,
+                "glicko": 93.61477617994551
+            },
+            "I believe I can flag": {
+                "score": 0.75,
+                "elo_change": 82.21845576866374,
+                "glicko": 91.5315776712862
+            },
+            "The White Russians": {
+                "score": 0.375,
+                "elo_change": -24.14759584016925,
+                "glicko": 89.31957991944448
+            },
+            "DeepFlue": {
+                "score": 0.75,
+                "elo_change": 106.64582348762858,
+                "glicko": 87.30569736271401
+            }
+        }
+    ],
+    [
+        "Conquerors of the 64 Squares",
+        1503.465200868016,
+        {
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.625,
+                "elo_change": 52.65442158001,
+                "glicko": 100
+            },
+            "Chicken Chess Club": {
+                "score": 0.375,
+                "elo_change": -101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "Blunderstruck": {
+                "score": 0.5,
+                "elo_change": -4.344296265964693,
+                "glicko": 99.15993526124673
+            },
+            "The Poisoned Pawns": {
+                "score": 0.3125,
+                "elo_change": -25.9935691081982,
+                "glicko": 96.26806400679874
+            },
+            "Will Resign for Toilet Paper": {
+                "score": 0.9375,
+                "elo_change": 147.5983049885222,
+                "glicko": 93.79149579358103
+            },
+            "flattening the eval": {
+                "score": 0.375,
+                "elo_change": -83.78613264367252,
+                "glicko": 91.40355999250686
+            },
+            "GOKUBA Is God": {
+                "score": 0.5625,
+                "elo_change": -46.03539015461517,
+                "glicko": 89.29635653590664
+            },
+            "Something Wicked This Way Comes": {
+                "score": 0.625,
+                "elo_change": 64.88423002349069,
+                "glicko": 87.55936046570848
+            }
+        }
+    ],
+    [
+        "Caro le Baskin Kann Kill",
+        1464.7333571920824,
+        {
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.75,
+                "elo_change": 105.30884316002,
+                "glicko": 100
+            },
+            "Alpha Pack": {
+                "score": 0.375,
+                "elo_change": -101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "The Socially Isolated Pawns": {
+                "score": 0.5625,
+                "elo_change": 42.73657589830069,
+                "glicko": 99.15993526124673
+            },
+            "Pawndemic Quaranqueen": {
+                "score": 0.5625,
+                "elo_change": -26.31520568212554,
+                "glicko": 96.28481036424903
+            },
+            "Team 1": {
+                "score": 0.5625,
+                "elo_change": 15.08321709948497,
+                "glicko": 93.82506073914871
+            },
+            "Caruanavirus": {
+                "score": 0.375,
+                "elo_change": -44.01552068690639,
+                "glicko": 91.42022851921527
+            },
+            "Wiping with our scoresheets": {
+                "score": 0.4375,
+                "elo_change": 11.66302605250954,
+                "glicko": 89.21353933547502
+            },
+            "We will quarantine your King": {
+                "score": 0.375,
+                "elo_change": -38.21521109764462,
+                "glicko": 87.25679818773953
+            }
+        }
+    ],
+    [
+        "Team 1",
+        1462.9272398339488,
+        {
+            "Build That Stonewall": {
+                "score": 0.4375,
+                "elo_change": -26.327210790005,
+                "glicko": 100
+            },
+            "Alice in Blunderland": {
+                "score": 0.375,
+                "elo_change": -70.44358914207027,
+                "glicko": 102.21496331950719
+            },
+            "Queen's Covid Declined": {
+                "score": 0.5625,
+                "elo_change": 38.27128075506635,
+                "glicko": 99.03936201454046
+            },
+            "The Winawer takes it all": {
+                "score": 0.625,
+                "elo_change": 62.40920682201501,
+                "glicko": 96.16750979833775
+            },
+            "Caro le Baskin Kann Kill": {
+                "score": 0.4375,
+                "elo_change": -15.005778160042958,
+                "glicko": 93.56281401408657
+            },
+            "She Said She Was 1800": {
+                "score": 0.375,
+                "elo_change": -54.02548121533741,
+                "glicko": 91.18050877464134
+            },
+            "Will Resign for Toilet Paper": {
+                "score": 0.625,
+                "elo_change": -8.361825752603922,
+                "glicko": 88.99919241905795
+            },
+            "captures captures captures": {
+                "score": 0.4375,
+                "elo_change": 36.410637316927115,
+                "glicko": 87.15955094580842
+            }
+        }
+    ],
+    [
+        "The Socially Isolated Pawns",
+        1462.533275408028,
+        {
+            "Chess Confinement Team": {
+                "score": 0.375,
+                "elo_change": -52.65442158001,
+                "glicko": 100
+            },
+            "Pawndemic Quaranqueen": {
+                "score": 0.625,
+                "elo_change": 86.07960029244369,
+                "glicko": 102.21496331950719
+            },
+            "Caro le Baskin Kann Kill": {
+                "score": 0.4375,
+                "elo_change": -42.680851639008736,
+                "glicko": 99.08528717391948
+            },
+            "Unstoppable Candidates": {
+                "score": 0.25,
+                "elo_change": -43.724531433530494,
+                "glicko": 96.2172124073117
+            },
+            "You Tal-king to Me?": {
+                "score": 0.4375,
+                "elo_change": 35.904008546510696,
+                "glicko": 93.79139283030497
+            },
+            "Wiping with our scoresheets": {
+                "score": 0.375,
+                "elo_change": -12.34542058287556,
+                "glicko": 91.61331876994268
+            },
+            "404 Name not found": {
+                "score": 0.5625,
+                "elo_change": -61.179668953107985,
+                "glicko": 89.46084100963485
+            },
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.75,
+                "elo_change": 53.13456075760603,
+                "glicko": 87.85821877450496
+            }
+        }
+    ],
+    [
+        "Weird Engine airLines",
+        1434.0228966155912,
+        {
+            "Caruanavirus": {
+                "score": 0.3125,
+                "elo_change": -78.981632370015,
+                "glicko": 100
+            },
+            "404 Name not found": {
+                "score": 0.625,
+                "elo_change": 86.07960029244369,
+                "glicko": 102.21496331950719
+            },
+            "Prepare to be Homeschooled": {
+                "score": 0.5,
+                "elo_change": 12.463195381183276,
+                "glicko": 99.08528717391948
+            },
+            "Wiping with our scoresheets": {
+                "score": 0.3125,
+                "elo_change": -72.95677813449082,
+                "glicko": 96.20920303133315
+            },
+            "The Winawer takes it all": {
+                "score": 0.5625,
+                "elo_change": 1.2744797185936694,
+                "glicko": 93.58945212768744
+            },
+            "QUarantEEN Gambit Declined": {
+                "score": 0.5625,
+                "elo_change": 66.56051032050682,
+                "glicko": 91.23214860310223
+            },
+            "Something Wicked This Way Comes": {
+                "score": 0.5625,
+                "elo_change": 18.545043882414927,
+                "glicko": 89.16775143427722
+            },
+            "You Tal-king to Me?": {
+                "score": 0.125,
+                "elo_change": -98.96152247504567,
+                "glicko": 87.14283189172606
+            }
+        }
+    ],
+    [
+        "Something Wicked This Way Comes",
+        1425.0394604242624,
+        {
+            "I believe I can flag": {
+                "score": 0.75,
+                "elo_change": 105.30884316002,
+                "glicko": 100
+            },
+            "Self-Isolated Pawns": {
+                "score": 0.375,
+                "elo_change": -101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "She Said She Was 1800": {
+                "score": 0.625,
+                "elo_change": 32.05832638982156,
+                "glicko": 99.15993526124673
+            },
+            "The White Russians": {
+                "score": 0.5625,
+                "elo_change": 6.876809705984604,
+                "glicko": 96.29195709471118
+            },
+            "e2 brute": {
+                "score": 0.5,
+                "elo_change": 73.4947159386468,
+                "glicko": 93.68499809434599
+            },
+            "Castled Kings": {
+                "score": 0.1875,
+                "elo_change": -107.91981401168971,
+                "glicko": 91.63412052225378
+            },
+            "Weird Engine airLines": {
+                "score": 0.4375,
+                "elo_change": -18.637236693225976,
+                "glicko": 89.41120872252566
+            },
+            "Conquerors of the 64 Squares": {
+                "score": 0.375,
+                "elo_change": -64.62981651373856,
+                "glicko": 87.36710305448344
+            }
+        }
+    ],
+    [
+        "Pawns Are People Too",
+        1412.558211154729,
+        {
+            "We will quarantine your King": {
+                "score": 0.0625,
+                "elo_change": -184.29047553003502,
+                "glicko": 100
+            },
+            "Wiping with our scoresheets": {
+                "score": 0.3125,
+                "elo_change": -6.785564303637052,
+                "glicko": 102.21496331950719
+            },
+            "404 Name not found": {
+                "score": 0.5625,
+                "elo_change": 70.41265929098833,
+                "glicko": 99.3838420584594
+            },
+            "Alice in Blunderland": {
+                "score": 0.8125,
+                "elo_change": 187.4827579367082,
+                "glicko": 96.59379151521857
+            },
+            "The White Russians": {
+                "score": 0.5,
+                "elo_change": -36.46334242231449,
+                "glicko": 94.19080471265922
+            },
+            "You Tal-king to Me?": {
+                "score": 0.5,
+                "elo_change": -0.5548062297582591,
+                "glicko": 91.83570617942414
+            },
+            "iyd0pXQi": {
+                "score": 0.4375,
+                "elo_change": -73.25459187091509,
+                "glicko": 89.59464607691464
+            },
+            "The Winawer takes it all": {
+                "score": 0.5,
+                "elo_change": -43.98842571630732,
+                "glicko": 87.70879644902341
+            }
+        }
+    ],
+    [
+        "flattening the eval",
+        1409.0945762608408,
+        {
+            "Pawndemic Quaranqueen": {
+                "score": 0.5,
+                "elo_change": 0.0,
+                "glicko": 100
+            },
+            "Will Resign for Toilet Paper": {
+                "score": 0.75,
+                "elo_change": 109.45406839824963,
+                "glicko": 102.21496331950719
+            },
+            "Chess Confinement Team": {
+                "score": 0.3125,
+                "elo_change": -103.15735107565604,
+                "glicko": 99.02385979791663
+            },
+            "Prepare to be Homeschooled": {
+                "score": 0.4375,
+                "elo_change": -18.995666099464362,
+                "glicko": 96.18493993815297
+            },
+            "Blunderstruck": {
+                "score": 0.6875,
+                "elo_change": 1.621421855271138,
+                "glicko": 93.56934135367645
+            },
+            "Conquerors of the 64 Squares": {
+                "score": 0.625,
+                "elo_change": 83.92538243254272,
+                "glicko": 91.48957819320096
+            },
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.25,
+                "elo_change": -52.08455519779721,
+                "glicko": 89.37558244803297
+            },
+            "She Said She Was 1800": {
+                "score": 0.1875,
+                "elo_change": -111.6687240523047,
+                "glicko": 87.41091678299694
+            }
+        }
+    ],
+    [
+        "The Winawer takes it all",
+        1402.7713487440776,
+        {
+            "The Poisoned Pawns": {
+                "score": 0.375,
+                "elo_change": -52.65442158001,
+                "glicko": 100
+            },
+            "e2 brute": {
+                "score": 0.4375,
+                "elo_change": 19.133850252408163,
+                "glicko": 102.21496331950719
+            },
+            "captures captures captures": {
+                "score": 0.625,
+                "elo_change": -0.34063493181884097,
+                "glicko": 99.15993526124673
+            },
+            "Team 1": {
+                "score": 0.375,
+                "elo_change": -62.72236570771609,
+                "glicko": 96.4411938247313
+            },
+            "Weird Engine airLines": {
+                "score": 0.4375,
+                "elo_change": -1.2844874998246263,
+                "glicko": 93.81187024060625
+            },
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.5,
+                "elo_change": -37.34219272614441,
+                "glicko": 91.43565981905805
+            },
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.5625,
+                "elo_change": -5.675734709312237,
+                "glicko": 89.31862524816204
+            },
+            "Pawns Are People Too": {
+                "score": 0.5,
+                "elo_change": 43.657335646495675,
+                "glicko": 87.32999574430164
+            }
+        }
+    ],
+    [
+        "Pawndemics",
+        1401.106081206991,
+        {
+            "Quarantine Gambit Accepted": {
+                "score": 0.25,
+                "elo_change": -105.30884316002,
+                "glicko": 100
+            },
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.625,
+                "elo_change": 101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "QUarantEEN Gambit Declined": {
+                "score": 0.5,
+                "elo_change": -7.938263474607823,
+                "glicko": 99.15993526124673
+            },
+            "iyd0pXQi": {
+                "score": 0.625,
+                "elo_change": 18.216192046874884,
+                "glicko": 96.27087706029415
+            },
+            "Wiping with our scoresheets": {
+                "score": 0.5,
+                "elo_change": 44.81815280243334,
+                "glicko": 93.70766534415358
+            },
+            "Armed Grobbery": {
+                "score": 0.1875,
+                "elo_change": -72.35481792109034,
+                "glicko": 91.43826104920565
+            },
+            "She Said She Was 1800": {
+                "score": 0.5,
+                "elo_change": 21.4861210613418,
+                "glicko": 89.33555955745437
+            },
+            "The Poisoned Pawns": {
+                "score": 0.25,
+                "elo_change": -99.32482769949736,
+                "glicko": 87.32723928515978
+            }
+        }
+    ],
+    [
+        "Prepare to be Homeschooled",
+        1382.611968766399,
+        {
+            "Alice in Blunderland": {
+                "score": 0.625,
+                "elo_change": 52.65442158001,
+                "glicko": 100
+            },
+            "Quarantine Gambit Accepted": {
+                "score": 0.375,
+                "elo_change": -23.547692618279427,
+                "glicko": 102.21496331950719
+            },
+            "Weird Engine airLines": {
+                "score": 0.5,
+                "elo_change": -12.46319538118332,
+                "glicko": 99.08528717391948
+            },
+            "flattening the eval": {
+                "score": 0.5625,
+                "elo_change": 19.004329029827062,
+                "glicko": 96.20920303133315
+            },
+            "QUarantEEN Gambit Declined": {
+                "score": 0.5625,
+                "elo_change": 51.41901288912352,
+                "glicko": 93.59141822772457
+            },
+            "e2 brute": {
+                "score": 0.3125,
+                "elo_change": -52.23994220790324,
+                "glicko": 91.25290493602482
+            },
+            "Alpha Pack": {
+                "score": 0.25,
+                "elo_change": -54.99936886619658,
+                "glicko": 89.0744118201374
+            },
+            "The White Russians": {
+                "score": 0.1875,
+                "elo_change": -97.21559565899872,
+                "glicko": 87.1186737518425
+            }
+        }
+    ],
+    [
+        "Will Resign for Toilet Paper",
+        1374.5152875555316,
+        {
+            "She Said She Was 1800": {
+                "score": 0.5,
+                "elo_change": 0.0,
+                "glicko": 100
+            },
+            "flattening the eval": {
+                "score": 0.25,
+                "elo_change": -109.45406839824963,
+                "glicko": 102.21496331950719
+            },
+            "The White Russians": {
+                "score": 0.25,
+                "elo_change": -92.12866806391109,
+                "glicko": 99.02385979791663
+            },
+            "I believe I can flag": {
+                "score": 0.625,
+                "elo_change": 89.5465852684197,
+                "glicko": 96.1519775897316
+            },
+            "Conquerors of the 64 Squares": {
+                "score": 0.0625,
+                "elo_change": -147.1737101170833,
+                "glicko": 93.6415651148019
+            },
+            "GOKUBA Is God": {
+                "score": 0.5,
+                "elo_change": 82.54030956653551,
+                "glicko": 91.26644473771377
+            },
+            "Team 1": {
+                "score": 0.375,
+                "elo_change": 8.426916889653086,
+                "glicko": 89.51086042504075
+            },
+            "Alice in Blunderland": {
+                "score": 0.625,
+                "elo_change": 42.757922410167275,
+                "glicko": 87.63413890923879
+            }
+        }
+    ],
+    [
+        "iyd0pXQi",
+        1371.0948072255276,
+        {
+            "Armed Grobbery": {
+                "score": 0.4375,
+                "elo_change": -26.327210790005,
+                "glicko": 100
+            },
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.625,
+                "elo_change": 23.547692618279427,
+                "glicko": 102.21496331950719
+            },
+            "The Poisoned Pawns": {
+                "score": 0.375,
+                "elo_change": -66.91464175394731,
+                "glicko": 99.08528717391948
+            },
+            "Pawndemics": {
+                "score": 0.375,
+                "elo_change": -18.19527813454952,
+                "glicko": 96.2138107740372
+            },
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.5625,
+                "elo_change": -39.050612881293105,
+                "glicko": 93.65563711641369
+            },
+            "captures captures captures": {
+                "score": 0.5625,
+                "elo_change": 46.208956287621184,
+                "glicko": 91.51354880350596
+            },
+            "Pawns Are People Too": {
+                "score": 0.5625,
+                "elo_change": 72.88239946156366,
+                "glicko": 89.33585733327546
+            },
+            "QUarantEEN Gambit Declined": {
+                "score": 0.125,
+                "elo_change": -121.056497582142,
+                "glicko": 87.46887343143295
+            }
+        }
+    ],
+    [
+        "GOKUBA Is God",
+        1367.1847171293139,
+        {
+            "captures captures captures": {
+                "score": 0.6875,
+                "elo_change": 78.981632370015,
+                "glicko": 100
+            },
+            "DeepFlue": {
+                "score": 0.625,
+                "elo_change": -6.501255122357873,
+                "glicko": 102.21496331950719
+            },
+            "e2 brute": {
+                "score": 0.3125,
+                "elo_change": -114.94358069288569,
+                "glicko": 99.26061554530763
+            },
+            "Armed Grobbery": {
+                "score": 0.25,
+                "elo_change": -23.136841564972013,
+                "glicko": 96.44403699271619
+            },
+            "R to D2": {
+                "score": 0.3125,
+                "elo_change": -15.377927820037005,
+                "glicko": 94.17628968669207
+            },
+            "Will Resign for Toilet Paper": {
+                "score": 0.5,
+                "elo_change": -83.60537424179404,
+                "glicko": 91.93865350626454
+            },
+            "Conquerors of the 64 Squares": {
+                "score": 0.4375,
+                "elo_change": 46.78116545314009,
+                "glicko": 90.1379148017833
+            },
+            "Build That Stonewall": {
+                "score": 0.5625,
+                "elo_change": -15.013101251794572,
+                "glicko": 88.3431716022938
+            }
+        }
+    ],
+    [
+        "I believe I can flag",
+        1365.994993938215,
+        {
+            "Something Wicked This Way Comes": {
+                "score": 0.25,
+                "elo_change": -105.30884316002,
+                "glicko": 100
+            },
+            "R to D2": {
+                "score": 0.3125,
+                "elo_change": -50.9545158459602,
+                "glicko": 102.21496331950719
+            },
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.5,
+                "elo_change": 30.287462069865132,
+                "glicko": 99.08528717391948
+            },
+            "Will Resign for Toilet Paper": {
+                "score": 0.375,
+                "elo_change": -89.71841056594542,
+                "glicko": 96.2576683118681
+            },
+            "404 Name not found": {
+                "score": 0.5625,
+                "elo_change": 46.0049664720229,
+                "glicko": 93.7380731801602
+            },
+            "Blunderstruck": {
+                "score": 0.25,
+                "elo_change": -81.95491582342436,
+                "glicko": 91.36903442234778
+            },
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.5625,
+                "elo_change": 74.51848843360233,
+                "glicko": 89.17040304950032
+            },
+            "Pawndemic Quaranqueen": {
+                "score": 0.5625,
+                "elo_change": 43.120762358074394,
+                "glicko": 87.32802468361118
+            }
+        }
+    ],
+    [
+        "DeepFlue",
+        1349.835565141244,
+        {
+            "You Tal-king to Me?": {
+                "score": 0.4375,
+                "elo_change": -26.327210790005,
+                "glicko": 100
+            },
+            "GOKUBA Is God": {
+                "score": 0.375,
+                "elo_change": 6.501255122357849,
+                "glicko": 102.21496331950719
+            },
+            "We will quarantine your King": {
+                "score": 0.25,
+                "elo_change": -48.49343453020408,
+                "glicko": 99.26061554530763
+            },
+            "404 Name not found": {
+                "score": 0.625,
+                "elo_change": -10.58510823625912,
+                "glicko": 96.55636666710731
+            },
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.625,
+                "elo_change": 56.222615135726755,
+                "glicko": 94.13791103513665
+            },
+            "Build That Stonewall": {
+                "score": 0.5,
+                "elo_change": 6.47722272329335,
+                "glicko": 91.70656294319592
+            },
+            "QUarantEEN Gambit Declined": {
+                "score": 0.4375,
+                "elo_change": -27.03887250750962,
+                "glicko": 89.47893244404284
+            },
+            "Blunderstruck": {
+                "score": 0.25,
+                "elo_change": -106.92090177615609,
+                "glicko": 87.43086725780594
+            }
+        }
+    ],
+    [
+        "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams",
+        1332.5592174680833,
+        {
+            "Conquerors of the 64 Squares": {
+                "score": 0.375,
+                "elo_change": -52.65442158001,
+                "glicko": 100
+            },
+            "She Said She Was 1800": {
+                "score": 0.5,
+                "elo_change": 31.265953837082126,
+                "glicko": 102.21496331950719
+            },
+            "Pawndemic Quaranqueen": {
+                "score": 0.5,
+                "elo_change": -36.37230832924329,
+                "glicko": 99.08528717391948
+            },
+            "Build That Stonewall": {
+                "score": 0.125,
+                "elo_change": -155.5479752657528,
+                "glicko": 96.28339930899483
+            },
+            "iyd0pXQi": {
+                "score": 0.4375,
+                "elo_change": 39.05425444122895,
+                "glicko": 93.66086105345398
+            },
+            "The Winawer takes it all": {
+                "score": 0.5,
+                "elo_change": 37.400347679449034,
+                "glicko": 91.51836745543237
+            },
+            "I believe I can flag": {
+                "score": 0.4375,
+                "elo_change": -74.84921624673281,
+                "glicko": 89.39477707468527
+            },
+            "Queen's Covid Declined": {
+                "score": 0.6428571428571429,
+                "elo_change": 44.26258293206186,
+                "glicko": 87.53620791463022
+            }
+        }
+    ],
+    [
+        "404 Name not found",
+        1330.020473625036,
+        {
+            "Alpha Pack": {
+                "score": 0.4375,
+                "elo_change": -26.327210790005,
+                "glicko": 100
+            },
+            "Weird Engine airLines": {
+                "score": 0.375,
+                "elo_change": -86.07960029244369,
+                "glicko": 102.21496331950719
+            },
+            "Pawns Are People Too": {
+                "score": 0.4375,
+                "elo_change": -70.05028388314626,
+                "glicko": 99.08528717391948
+            },
+            "DeepFlue": {
+                "score": 0.375,
+                "elo_change": 10.551884656261661,
+                "glicko": 96.32254263075794
+            },
+            "I believe I can flag": {
+                "score": 0.4375,
+                "elo_change": -46.16424257700073,
+                "glicko": 93.92355193699578
+            },
+            "Queen's Covid Declined": {
+                "score": 0.5,
+                "elo_change": 1.7624305853541453,
+                "glicko": 91.53871249717088
+            },
+            "The Socially Isolated Pawns": {
+                "score": 0.4375,
+                "elo_change": 61.015377939738364,
+                "glicko": 89.32241360357948
+            },
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.5,
+                "elo_change": -14.68788201372239,
+                "glicko": 87.72848672316162
+            }
+        }
+    ],
+    [
+        "Pawndemic Quaranqueen",
+        1328.8446782178046,
+        {
+            "flattening the eval": {
+                "score": 0.5,
+                "elo_change": 0.0,
+                "glicko": 100
+            },
+            "The Socially Isolated Pawns": {
+                "score": 0.375,
+                "elo_change": -86.07960029244369,
+                "glicko": 102.21496331950719
+            },
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.5,
+                "elo_change": 36.372308329243246,
+                "glicko": 99.08528717391948
+            },
+            "Caro le Baskin Kann Kill": {
+                "score": 0.4375,
+                "elo_change": 26.31458204921102,
+                "glicko": 96.28339930899483
+            },
+            "She Said She Was 1800": {
+                "score": 0.3125,
+                "elo_change": -146.7874650050619,
+                "glicko": 93.82376967689186
+            },
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.5,
+                "elo_change": -22.131094507286637,
+                "glicko": 91.77980840621116
+            },
+            "Alice in Blunderland": {
+                "score": 0.5625,
+                "elo_change": 64.54865623186431,
+                "glicko": 89.57536118728478
+            },
+            "I believe I can flag": {
+                "score": 0.4375,
+                "elo_change": -43.3927085877215,
+                "glicko": 87.63791164574282
+            }
+        }
+    ],
+    [
+        "Socially Distanced Queen's Pawn",
+        1327.2608866207358,
+        {
+            "The White Russians": {
+                "score": 0.3125,
+                "elo_change": -78.981632370015,
+                "glicko": 100
+            },
+            "iyd0pXQi": {
+                "score": 0.375,
+                "elo_change": -23.547692618279427,
+                "glicko": 102.21496331950719
+            },
+            "I believe I can flag": {
+                "score": 0.5,
+                "elo_change": -30.287462069865157,
+                "glicko": 99.08528717391948
+            },
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.3125,
+                "elo_change": -77.06345665921147,
+                "glicko": 96.2576683118681
+            },
+            "Queen's Covid Declined": {
+                "score": 0.5,
+                "elo_change": -4.931291428894824,
+                "glicko": 93.634183015171
+            },
+            "Pawndemic Quaranqueen": {
+                "score": 0.5,
+                "elo_change": 21.909265644223506,
+                "glicko": 91.2427554131215
+            },
+            "The Winawer takes it all": {
+                "score": 0.4375,
+                "elo_change": 5.654217526125877,
+                "glicko": 89.08201095680049
+            },
+            "404 Name not found": {
+                "score": 0.5,
+                "elo_change": 14.508938596652136,
+                "glicko": 87.11158434361813
+            }
+        }
+    ],
+    [
+        "Build That Stonewall",
+        1318.3820742443404,
+        {
+            "Team 1": {
+                "score": 0.5625,
+                "elo_change": 26.327210790005,
+                "glicko": 100
+            },
+            "Chess Confinement Team": {
+                "score": 0.4375,
+                "elo_change": -11.679737478502087,
+                "glicko": 102.21496331950719
+            },
+            "R to D2": {
+                "score": 0.3125,
+                "elo_change": -86.91037883709156,
+                "glicko": 99.03936201454046
+            },
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.875,
+                "elo_change": 155.2032323635613,
+                "glicko": 96.16319522130526
+            },
+            "Caruanavirus": {
+                "score": 0.4375,
+                "elo_change": -92.59019202674514,
+                "glicko": 93.55148578062986
+            },
+            "DeepFlue": {
+                "score": 0.5,
+                "elo_change": -6.448799004366991,
+                "glicko": 91.47155694689775
+            },
+            "captures captures captures": {
+                "score": 0.125,
+                "elo_change": -180.27078371656438,
+                "glicko": 89.26331468226678
+            },
+            "GOKUBA Is God": {
+                "score": 0.4375,
+                "elo_change": 14.751522154044212,
+                "glicko": 87.39806178476356
+            }
+        }
+    ],
+    [
+        "Alice in Blunderland",
+        1291.5283136718617,
+        {
+            "Prepare to be Homeschooled": {
+                "score": 0.375,
+                "elo_change": -52.65442158001,
+                "glicko": 100
+            },
+            "Team 1": {
+                "score": 0.625,
+                "elo_change": 70.44358914207027,
+                "glicko": 102.21496331950719
+            },
+            "Chicken Chess Club": {
+                "score": 0.375,
+                "elo_change": -19.555030643357718,
+                "glicko": 99.03936201454046
+            },
+            "Pawns Are People Too": {
+                "score": 0.1875,
+                "elo_change": -186.2204953449824,
+                "glicko": 96.2241118395924
+            },
+            "captures captures captures": {
+                "score": 0.4375,
+                "elo_change": 58.08850982034906,
+                "glicko": 93.85166465900905
+            },
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.5625,
+                "elo_change": 28.84453176241518,
+                "glicko": 91.86866774856087
+            },
+            "Pawndemic Quaranqueen": {
+                "score": 0.4375,
+                "elo_change": -64.6146206578212,
+                "glicko": 89.62737081652159
+            },
+            "Will Resign for Toilet Paper": {
+                "score": 0.375,
+                "elo_change": -42.80374882680177,
+                "glicko": 87.68601941194528
+            }
+        }
+    ],
+    [
+        "Hi everyone it\u2019s Jerry!",
+        1290.273347015881,
+        {
+            "Radjabov Was Right": {
+                "score": 0.4375,
+                "elo_change": -26.327210790005,
+                "glicko": 100
+            },
+            "Pawndemics": {
+                "score": 0.375,
+                "elo_change": -101.51236755155637,
+                "glicko": 102.21496331950719
+            },
+            "R\u00e9ti Or Not Here We Come": {
+                "score": 0.4375,
+                "elo_change": -10.990565423287288,
+                "glicko": 99.15993526124673
+            },
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.6875,
+                "elo_change": 77.09680468011175,
+                "glicko": 96.28111251372512
+            },
+            "DeepFlue": {
+                "score": 0.375,
+                "elo_change": -55.71208890369862,
+                "glicko": 93.65551101388358
+            },
+            "Alice in Blunderland": {
+                "score": 0.4375,
+                "elo_change": -28.508460223226383,
+                "glicko": 91.26575366591611
+            },
+            "Queen's Covid Declined": {
+                "score": 0.5625,
+                "elo_change": -11.457183549743156,
+                "glicko": 89.07418110159568
+            },
+            "The Socially Isolated Pawns": {
+                "score": 0.25,
+                "elo_change": -52.315581222714044,
+                "glicko": 87.127261070667
+            }
+        }
+    ],
+    [
+        "Queen's Covid Declined",
+        1251.2583018362268,
+        {
+            "e2 brute": {
+                "score": 0.4375,
+                "elo_change": -26.327210790005,
+                "glicko": 100
+            },
+            "Caruanavirus": {
+                "score": 0.25,
+                "elo_change": -48.560059996391665,
+                "glicko": 102.21496331950719
+            },
+            "Team 1": {
+                "score": 0.4375,
+                "elo_change": -38.42005982501983,
+                "glicko": 99.26061554530763
+            },
+            "captures captures captures": {
+                "score": 0.25,
+                "elo_change": -106.1466871657111,
+                "glicko": 96.36780331855687
+            },
+            "Socially Distanced Queen's Pawn": {
+                "score": 0.5,
+                "elo_change": 4.940543684950392,
+                "glicko": 93.73732445873202
+            },
+            "404 Name not found": {
+                "score": 0.5,
+                "elo_change": -1.755777755560618,
+                "glicko": 91.3370281516737
+            },
+            "Hi everyone it\u2019s Jerry!": {
+                "score": 0.4375,
+                "elo_change": 11.470075998914433,
+                "glicko": 89.13733593877812
+            },
+            "Hopefully You Guys Are Better at Chess Than You Are at Naming Teams": {
+                "score": 0.35714285714285715,
+                "elo_change": -43.94252231495007,
+                "glicko": 87.18561942556654
+            }
+        }
+    ]
+]

@@ -2,6 +2,7 @@
 import re
 import ssl
 import sys
+import json
 from bs4 import BeautifulSoup
 from urllib import request, parse, error
 from Utilities import Season, Tournament, Team
@@ -37,7 +38,7 @@ class Lichess:
         args:
             season_number (int): The season number
         """
-        self.season = Season('Chess', f'Season {season_number}', None, 7)
+        self.season = Season('Chess', f'Season {season_number}', None, 7, 100)
         self.season_number = season_number
 
     def get_season(self):
@@ -83,8 +84,8 @@ class Lichess:
             self.season.calculate_elo(tournament_name)
             self.season.glicko()
         results = [(team_name, team.elo, team.history) for team_name, team in self.season.teams.items()]
-        results = sorted(results, key=lambda x: x[1])
-        print(results)
+        results = sorted(results, key=lambda x: x[1])[::-1]
+        json.dump(results, open('results.txt', 'w'), indent=4)
         #print([timestamp['datetime'] for timestamp in opponents.find_all('time')])
 
 def main():

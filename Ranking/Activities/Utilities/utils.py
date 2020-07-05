@@ -83,12 +83,11 @@ class Team:
         b = g*(result-rounds*e)
         val = a*b
         self.elo_round = self.elo_round + val
-        self.history[opp_name] = {'score': result/rounds, 'elo_change': val}
+        self.history[opp_name] = {'score': result/rounds, 'elo_change': val, 'glicko': self.glicko}
 
         # Updates the glicko based on the round
-        for i in range(int(rounds)):
-            self.glick_round = math.sqrt(1/(
-                1/(self.glick_round*self.glick_round)+1/d2))
+        self.glick_round = math.sqrt(1/(
+            1/(self.glick_round*self.glick_round)+1/d2))
 
     def increment_time_period(self):
         """ Increment the time period by one"""
@@ -131,13 +130,14 @@ class Tournament:
 
 class Season:
     """ A season is a collection of tournaments"""
-    def __init__(self, activity, name, season_start, glicko_increment):
+    def __init__(self, activity, name, season_start, glicko_increment, default_glicko=350.00):
         """
         Args:
             activity (string): The activity the season is a part of
             name (string): Name of the season
             season_start (date): The start date of the season
             glicko_increment (int): The number of days after which to increment glicko_time
+            default_glicko (float): Default glicko to use
         """
         self.teams = {}
         self.tournaments = {}
@@ -147,6 +147,7 @@ class Season:
         # self.cur = self.conn.cursor()
         self.season_starts = season_start
         self.glicko_increment = glicko_increment
+        self.default_glicko = default_glicko
 
         # See if the season exists
         # self.cur.execute(f'''SELECT id FROM season WHERE name = %s''', (self.name))
@@ -185,7 +186,7 @@ class Season:
             # Create a team if one does not exist for each competitor
             for i in ['team_1', 'team_2']:
                 if round[i] not in self.teams:
-                    self.teams[round[i]] = Team()
+                    self.teams[round[i]] = Team(glicko=self.default_glicko)
 
             # Calculate elo changes
             self.teams[round['team_1']].round(
