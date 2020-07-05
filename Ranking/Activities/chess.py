@@ -31,18 +31,19 @@ def fancy_fractions(str):
 
 # Class for Tracking a 4545 league season
 class Lichess:
-    def __init__(self):
-        """ Initializes the league """
-        self.season = Season()
-
-    def get_season(self, season_number):
-        """ Get a season
+    def __init__(self, season_number):
+        """ Initializes the league
 
         args:
             season_number (int): The season number
         """
+        self.season = Season('Chess', f'Season {season_number}', None, 7)
+        self.season_number = season_number
+
+    def get_season(self):
+        """ Get a season"""
         result = request.urlopen(
-            f'{LICHESS4545_URL}/team4545/season/{season_number}/pairings',
+            f'{LICHESS4545_URL}/team4545/season/{self.season_number}/pairings',
             context=CTX)
         round_results = BeautifulSoup(result, 'html.parser')
 
@@ -62,10 +63,11 @@ class Lichess:
                 print([fancy_fractions(score.get_text().strip()) for score in opponents.find_all(
                     'th', {'class': 'cell-score'}
                 )])
+                print(opponents.find_all('time').datetime)
 
 def main():
-    chess = Lichess()
-    chess.get_season(21)
+    chess = Lichess(21)
+    chess.get_season()
 
 if __name__ == '__main__':
     main()

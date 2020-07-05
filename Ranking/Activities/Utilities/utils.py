@@ -4,7 +4,7 @@ Abstract library for processing elo results (v2)
 """
 
 import math
-import pyscopg
+import psycopg2
 from datetime import date
 from configparser import ConfigParser
 
