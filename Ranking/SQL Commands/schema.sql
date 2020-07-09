@@ -1,20 +1,21 @@
 CREATE TABLE activity(
-  id INT PRIMARY KEY NOT NULL,
+  id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   UNIQUE (name)
 );
 
 CREATE TABLE season(
-  id INT PRIMARY KEY NOT NULL,
+  id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   activity_id INT REFERENCES activity(id) NOT NULL,
   UNIQUE(name)
 );
 
 CREATE TABLE team(
-  id INT PRIMARY KEY NOT NULL,
+  id SERIAL PRIMARY KEY,
   name TEXT,
   activity INT REFERENCES activity(id) NOT NULL,
+  season INT REFERENCES season(id) NOT NULL,
   elo REAL,
   glicko REAL,
   glicko_time INT,
@@ -29,13 +30,13 @@ CREATE TABLE season_team(
 );
 
 CREATE TABLE tournament(
-  id INT PRIMARY KEY NOT NULL,
+  id SERIAL PRIMARY KEY,
   season_id INT NOT NULL,
   occured_date date
 );
 
 CREATE TABLE round(
-  id INT PRIMARY KEY NOT NULL,
+  id SERIAL PRIMARY KEY,
   tournament_id INT REFERENCES tournament(id),
   team_1 INT REFERENCES team(id) NOT NULL,
   team_2 INT REFERENCES team(id) NOT NULL,

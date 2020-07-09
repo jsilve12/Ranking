@@ -34,6 +34,15 @@ def parseDB(filename='db.config', section='postgresql'):
         raise Exception(f'Section {section} not found')
     return db
 
+def get_all_seasons():
+    """ Gets all the seasons """
+    conn = psycopg2.connect(**parseDB('configs/local/db.config'))
+    cur = conn.cursor()
+    cur.execute("""
+                INSERT INTO season(name, activity_id) VALUES('season 1', 2)""")
+    conn.commit()
+    return cur.execute('SELECT name FROM season')
+
 class Team:
     """ Class to store information about a team"""
     def __init__(self, elo=1500.00, glicko=350.00, glicko_time=0.00,

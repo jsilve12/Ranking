@@ -5,7 +5,7 @@ import sys
 import json
 from bs4 import BeautifulSoup
 from urllib import request, parse, error
-from Utilities import Season, Tournament, Team
+from Utilities import Season, Tournament, Team, get_all_seasons
 
 # Globals
 LICHESS4545_URL = 'https://www.lichess4545.com'
@@ -32,7 +32,7 @@ def fancy_fractions(str):
 
 # Class for Tracking a 4545 league season
 class Lichess:
-    def __init__(self, season_number):
+    def set_season(self, season_number):
         """ Initializes the league
 
         args:
@@ -40,6 +40,18 @@ class Lichess:
         """
         self.season = Season('Chess', f'Season {season_number}', None, 7, 100)
         self.season_number = season_number
+
+    def get_seasons(self):
+        """ Returns a list of seasons that haven't been processed"""
+        result = request.urlopen(
+            f'{LICHESS4545_URL}/team4545/season/1/summary/',
+            context=CTX)
+        beautiful_result = BeautifulSoup(result, 'html.parser')
+        seasons = [int(season.get_text().strip().split()[1])
+                   for season in beautiful_result.find_all(
+                   'ul', {'class': 'dropdown-menu'})[-1].find_all('li')[2:]]
+        print(get_all_seasons())
+        return seasons
 
     def get_season(self):
         """ Get a season"""
@@ -55,7 +67,6 @@ class Lichess:
              if re.fullmatch('/team4545/season/[0-9]+/round/[0-9]+/pairings/',
                              round_result.get('href', ''))],
             key=lambda x: int(x.split('/')[5]))
-        print(round_results_ordered)
         for team in round_results_ordered:
             # Get the round results
             opponents = BeautifulSoup(request.urlopen(
@@ -86,11 +97,11 @@ class Lichess:
         results = [(team_name, team.elo, team.history) for team_name, team in self.season.teams.items()]
         results = sorted(results, key=lambda x: x[1])[::-1]
         json.dump(results, open('results.txt', 'w'), indent=4)
-        #print([timestamp['datetime'] for timestamp in opponents.find_all('time')])
 
 def main():
-    chess = Lichess(21)
-    chess.get_season()
+    # Get the season numbers
+    chess = Lichess()
+    print(chess.get_seasons())
 
 if __name__ == '__main__':
     main()
