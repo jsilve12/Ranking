@@ -38,10 +38,8 @@ def get_all_seasons():
     """ Gets all the seasons """
     conn = psycopg2.connect(**parseDB('configs/local/db.config'))
     cur = conn.cursor()
-    cur.execute("""
-                INSERT INTO season(name, activity_id) VALUES('season 1', 2)""")
-    conn.commit()
-    return cur.execute('SELECT name FROM season')
+    cur.execute('SELECT name FROM season')
+    return cur.fetchall()
 
 class Team:
     """ Class to store information about a team"""
@@ -150,40 +148,39 @@ class Season:
         """
         self.teams = {}
         self.tournaments = {}
-        # self.conn = psycopg2.connect(parseDB('configs/local/db.config'))
+        self.conn = psycopg2.connect(**parseDB('configs/local/db.config'))
         self.activity = activity
         self.name = name
-        # self.cur = self.conn.cursor()
+        self.cur = self.conn.cursor()
         self.season_starts = season_start
         self.glicko_increment = glicko_increment
         self.default_glicko = default_glicko
 
-        # See if the season exists
-        # self.cur.execute(f'''SELECT id FROM season WHERE name = %s''', (self.name))
-        # id = self.cur.fetchone()
-        # if id:
-        #     self.id = id['id']
-        # else:
-        #     self.cur.execute(f'''INSERT INTO season(name, activity) VALUES(%s,%s)
-        #                       RETURNING season.id''',
-        #                      (self.name, self.activity))
-        #     self.id = self.cur.fetchone()['id']
-        #
-        # # Load all the teams
-        # self.cur.execute(f'''
-        #     SELECT * FROM team
-        #     JOIN season_team
-        #         ON season_team.team_id = team.id
-        #     JOIN season
-        #         ON season.id = season_team.season_id
-        #     WHERE
-        #         season.name = %s
-        # ''', (self.name))
-        # for team in self.cur.fetchall():
-        #     self.teams[team['name']] = Team(team.get('elo'), team.get('glicko'),
-        #                                     team.get('glicko_time'), team.get('side_1'),
-        #                                     team.get('side_2'), team['id'])
+        # Get the activity id
+        self.cur.execute(f'''SELECT id FROM activity WHERE name = %s''', (self.activity, ))
+        id = self.cur.fetchone()
+        if id:
+            self.activity_id = id[0]
+        else:
+            self.cur.execute(f'''INSERT INTO activity(name) VALUES(%s)
+                              RETURNING id''', (self.activity, ))
+            self.activity_id = self.cur.fetchone()[0]
 
+        # See if the season exists
+        self.cur.execute(f'''SELECT id FROM season WHERE name = %s''', (self.name, ))
+        id = self.cur.fetchone()
+        if id:
+            self.id = id[0]
+        else:
+            self.cur.execute(f'''INSERT INTO season(name, activity_id) VALUES(%s,%s)
+                              RETURNING id''',
+                             (self.name, self.activity_id))
+            self.id = self.cur.fetchone()[0]
+        self.conn.commit()
+
+        # Load Teams
+        # Load Tournaments
+        # Load Rounds
 
     def calculate_elo(self, tournament_name):
         """ Calculate the elo score change for a desired tournament
@@ -235,6 +232,10 @@ class Season:
 
     def __del__(self):
         """ Persist the changes into the database"""
+
+        # Persist Teams
+        # Persist Tournaments
+        # Persist Rounds
         # for team_name in list(self.teams.keys()):
         #     team = self.teams[team_name]
         #     if team.id == -1:

@@ -50,8 +50,8 @@ class Lichess:
         seasons = [int(season.get_text().strip().split()[1])
                    for season in beautiful_result.find_all(
                    'ul', {'class': 'dropdown-menu'})[-1].find_all('li')[2:]]
-        print(get_all_seasons())
-        return seasons
+        run_seasons = [int(season[0].split()[1]) for season in get_all_seasons()]
+        return set(seasons).difference(set(run_seasons))
 
     def get_season(self):
         """ Get a season"""
@@ -101,7 +101,10 @@ class Lichess:
 def main():
     # Get the season numbers
     chess = Lichess()
-    print(chess.get_seasons())
+    seasons = chess.get_seasons()
+    for season in seasons:
+        chess.set_season(season)
+        chess.get_season()
 
 if __name__ == '__main__':
     main()
