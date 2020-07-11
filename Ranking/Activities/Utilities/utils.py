@@ -259,8 +259,18 @@ class Season:
                 (self.id, tournament_name))
 
             # Persist the Rounds
-            # self.cur.execute(f'''
-            #     INSERT INTO round(tournament_id, )''')
+            tournament_id = self.cur.fetchone()[0]
+            for round in tournament.rounds:
+                self.cur.execute(f'''
+                    INSERT INTO round(tournament_id, team_1, team_2, result, rounds)
+                    VALUES(
+                        %s,
+                        ( SELECT id FROM team WHERE name=%s ),
+                        ( SELECT id FROM team WHERE name=%s ),
+                        %s,
+                        %s
+                    )''',
+                    (tournament_id, round['team_1'], round['team_2'], round['result'], round['rounds']))
         self.conn.commit()
 
 # EOF

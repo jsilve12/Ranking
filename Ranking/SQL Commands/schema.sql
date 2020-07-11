@@ -43,6 +43,6 @@ CREATE TABLE round(
   team_2 INT REFERENCES team(id) NOT NULL,
   result REAL NOT NULL,
   rounds REAL NOT NULL,
-  team_1_elo_change REAL NOT NULL,
-  team_2_elo_change REAL NOT NULL
+  team_1_elo_change REAL,
+  team_2_elo_change REAL
 );
