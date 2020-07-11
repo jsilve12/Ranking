@@ -1,0 +1,12 @@
+sudo: required
+servies:
+  - docker
+
+jobs:
+  include:
+    - stage: test
+      script: docker run -e CI=true jsilve12/react-test npm run test
+    - stage: deploy
+      script: bash ./deploy.sh
+      on:
+        branch: master

@@ -65,7 +65,7 @@ class Team:
         self.side_2 = side_2
         self.id = id
 
-    def round(self, result, rounds, opp_elo, opp_name):
+    def round(self, result, rounds, opp_elo, opp_name, team_1):
         """ Processes one rounds worth of results
 
         Args:
@@ -73,6 +73,7 @@ class Team:
             rounds (double): Maximum possible number of points
             opp_elo (double): The elo of your opponent
             opp_name (string): Opponents name
+            team_1 (bool): Is team 1
         """
         # First update the glicko based on inactivity
         if self.glick_time != 0:
@@ -93,6 +94,10 @@ class Team:
         val = a*b
         self.elo_round = self.elo_round + val
         self.history[opp_name] = {'score': result/rounds, 'elo_change': val, 'glicko': self.glicko}
+        if team_1:
+            self.side_1 += val
+        else:
+            self.side_2 += val
 
         # Updates the glicko based on the round
         self.glick_round = math.sqrt(1/(
@@ -112,10 +117,11 @@ class Team:
 class Tournament:
     """ An object to simulate a single tournament.
         A tournament lasts one time period or fewer"""
-    def __init__(self, event_date):
+    def __init__(self, event_date, id=-1):
         """
         Args:
             event_date (date): First day the event occured
+            id (int): The tournaments id if it's not in the db
         """
         self.rounds = []
         self.date = event_date
@@ -199,10 +205,10 @@ class Season:
             # Calculate elo changes
             self.teams[round['team_1']].round(
                 round['result'], round['rounds'],
-                self.teams[round['team_2']].elo, round['team_2'])
+                self.teams[round['team_2']].elo, round['team_2'], True)
             self.teams[round['team_2']].round(
                 math.fabs(round['rounds']-round['result']), round['rounds'],
-                self.teams[round['team_1']].elo, round['team_1'])
+                self.teams[round['team_1']].elo, round['team_1'], False)
 
         for team in self.teams.values():
             team.end_time_period()
@@ -241,12 +247,14 @@ class Season:
                 self.cur.execute(f'''
                     UPDATE team SET elo=%s, glicko=%s, glicko_time=%s, side_1=%s, side_2=%s
                     WHERE id=%s''',
-                    (team.elo, team.glicko, team.glick_time, team.side_1, team.side_2, team.id))
+                                 (team.elo, team.glicko, team.glick_time,
+                                  team.side_1, team.side_2, team.id))
             else:
                 self.cur.execute(f'''
                     INSERT INTO team(name, elo, glicko, glicko_time, side_1, side_2, activity, season)
                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s) RETURNING id''',
-                    (team_name, team.elo, team.glicko, team.glick_time, team.side_1, team.side_2, self.activity_id, self.id))
+                                 (team_name, team.elo, team.glicko, team.glick_time,
+                                  team.side_1, team.side_2, self.activity_id, self.id))
                 self.cur.execute(f'''
                     INSERT INTO season_team(season_id, team_id)
                     VALUES(%s, %s)''', (self.id, self.cur.fetchone()[0]))
@@ -262,15 +270,16 @@ class Season:
             tournament_id = self.cur.fetchone()[0]
             for round in tournament.rounds:
                 self.cur.execute(f'''
-                    INSERT INTO round(tournament_id, team_1, team_2, result, rounds)
-                    VALUES(
-                        %s,
-                        ( SELECT id FROM team WHERE name=%s ),
-                        ( SELECT id FROM team WHERE name=%s ),
-                        %s,
-                        %s
-                    )''',
-                    (tournament_id, round['team_1'], round['team_2'], round['result'], round['rounds']))
+                                INSERT INTO round(tournament_id, team_1, team_2, result,
+                                rounds)
+                                VALUES(
+                                    %s,
+                                    ( SELECT id FROM team WHERE name=%s ),
+                                    ( SELECT id FROM team WHERE name=%s ),
+                                    %s,
+                                    %s)''',
+                                 (tournament_id, round['team_1'], round['team_2'],
+                                  round['result'], round['rounds']))
         self.conn.commit()
 
 # EOF
