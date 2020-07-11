@@ -96,13 +96,13 @@ class Lichess:
             self.season.glicko()
         results = [(team_name, team.elo, team.history) for team_name, team in self.season.teams.items()]
         results = sorted(results, key=lambda x: x[1])[::-1]
-        json.dump(results, open('results.txt', 'w'), indent=4)
+        # json.dump(results, open('results.txt', 'w'), indent=4)
 
 def main():
     # Get the season numbers
     chess = Lichess()
     seasons = chess.get_seasons()
-    for season in seasons:
+    for season in [1]: #seasons:
         chess.set_season(season)
         chess.get_season()
 

@@ -43,7 +43,7 @@ def get_all_seasons():
 
 class Team:
     """ Class to store information about a team"""
-    def __init__(self, elo=1500.00, glicko=350.00, glicko_time=0.00,
+    def __init__(self, elo=1500.00, glicko=350.00, glicko_time=0,
                  side_1=0.00, side_2=0.00, id=-1):
         """ Initialize the teams information
 
@@ -61,6 +61,8 @@ class Team:
         self.glick_round = self.glicko
         self.glick_time = glicko_time
         self.history = {}
+        self.side_1 = side_1
+        self.side_2 = side_2
         self.id = id
 
     def round(self, result, rounds, opp_elo, opp_name):
@@ -234,20 +236,31 @@ class Season:
         """ Persist the changes into the database"""
 
         # Persist Teams
-        # Persist Tournaments
-        # Persist Rounds
-        # for team_name in list(self.teams.keys()):
-        #     team = self.teams[team_name]
-        #     if team.id == -1:
-        #         self.cur.execute(f'''INSERT INTO
-        #                          team(name, season, elo, glicko, glicko_time,
-        #                          side_1, side_2) VALUES(%s,%s,%s,%s,%s,%s,%s)
-        #                          RETURNING team.id''',
-        #                          (team_name, self.id, team.elo, team.glicko,
-        #                           team.glicko_time, team.side_1, team.side_2))
-        #         self.cur.execute(f'''INSERT INTO season_team(season_id, team_id)
-        #                          VALUES(%s,%s)''', (self.id, self.cur.fetchone().id))
-        #     else:
-        #         self.cur.commit(f'''UPDATE team SET elo=%s, glicko=%s, glicko_time=%s,
-        #                         side_1 = %s, side_2 = %s''', (team.elo, team.glicko,
-        #                         team.glicko_time, team.side_2, team.side_2))
+        for team_name, team in self.teams.items():
+            if team.id != -1:
+                self.cur.execute(f'''
+                    UPDATE team SET elo=%s, glicko=%s, glicko_time=%s, side_1=%s, side_2=%s
+                    WHERE id=%s''',
+                    (team.elo, team.glicko, team.glick_time, team.side_1, team.side_2, team.id))
+            else:
+                self.cur.execute(f'''
+                    INSERT INTO team(name, elo, glicko, glicko_time, side_1, side_2, activity, season)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s) RETURNING id''',
+                    (team_name, team.elo, team.glicko, team.glick_time, team.side_1, team.side_2, self.activity_id, self.id))
+                self.cur.execute(f'''
+                    INSERT INTO season_team(season_id, team_id)
+                    VALUES(%s, %s)''', (self.id, self.cur.fetchone()[0]))
+        self.conn.commit()
+
+        # Persist Tournaments and Rounds
+        for tournament_name, tournament in self.tournaments.items():
+            self.cur.execute(f'''
+                INSERT INTO tournament(season_id, name) VALUES(%s, %s) RETURNING id''',
+                (self.id, tournament_name))
+
+            # Persist the Rounds
+            # self.cur.execute(f'''
+            #     INSERT INTO round(tournament_id, )''')
+        self.conn.commit()
+
+# EOF

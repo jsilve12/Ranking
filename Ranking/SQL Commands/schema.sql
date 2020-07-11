@@ -31,6 +31,7 @@ CREATE TABLE season_team(
 
 CREATE TABLE tournament(
   id SERIAL PRIMARY KEY,
+  name TEXT,
   season_id INT NOT NULL,
   occured_date date
 );

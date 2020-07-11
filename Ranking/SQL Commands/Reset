@@ -1,1 +1,5 @@
-Update Team Set elo = 1500, glicko = 350
+DELETE FROM round;
+DELETE FROM tournament;
+DELETE FROM season_team;
+DELETE FROM team;
+DELETE FROM season;
