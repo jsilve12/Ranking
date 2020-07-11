@@ -1,12 +1,16 @@
 sudo: required
+language: python
 servies:
   - docker
 
+before_install:
+  - pip install --user awscli
+
 jobs:
   include:
+    - stage: build
+      script:
+        - docker build Ranking/ -t latest
     - stage: test
-      script: docker run -e CI=true jsilve12/react-test npm run test
-    - stage: deploy
-      script: bash ./deploy.sh
-      on:
-        branch: master
+      script:
+        - echo 'hello world'
