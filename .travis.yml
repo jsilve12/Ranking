@@ -2,6 +2,9 @@ sudo: required
 language: python
 servies:
   - docker
+env:
+  global:
+    WORKER_REPO=642498794654.dkr.ecr.us-east-2.amazonaws.com/ranking/worker
 
 before_install:
   - pip install awscli
@@ -10,7 +13,7 @@ jobs:
   include:
     - stage: build
       script:
-        - docker build Ranking/ -t latest
+        - docker build Ranking/ -t $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
     - stage: test
       script:
         - echo 'hello world'
