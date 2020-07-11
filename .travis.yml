@@ -4,7 +4,7 @@ servies:
   - docker
 
 before_install:
-  - pip install --user awscli
+  - pip install awscli
 
 jobs:
   include:
