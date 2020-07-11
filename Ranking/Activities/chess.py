@@ -76,6 +76,8 @@ class Lichess:
             )
             # Collect the round results
             tournament_name = f"Round {team.split('/')[5]}"
+            if tournament_name in self.season.tournaments:
+                continue
             self.season.create_tournament(tournament_name)
             team_names = [opponent.get_text().strip()
                           for opponent in opponents.find_all('a', {'class': 'team-link'}

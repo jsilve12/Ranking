@@ -123,6 +123,7 @@ class Tournament:
             event_date (date): First day the event occured
             id (int): The tournaments id if it's not in the db
         """
+        self.id = id
         self.rounds = []
         self.date = event_date
 
@@ -168,6 +169,7 @@ class Season:
         self.cur.execute(f'''SELECT id FROM activity WHERE name = %s''', (self.activity, ))
         id = self.cur.fetchone()
         if id:
+            self.cur.execute(f'''SELECT id FROM activity WHERE name = %s''', (self.activity, ))
             self.activity_id = id[0]
         else:
             self.cur.execute(f'''INSERT INTO activity(name) VALUES(%s)
@@ -187,8 +189,18 @@ class Season:
         self.conn.commit()
 
         # Load Teams
+        self.cur.execute(f'''SELECT * FROM team WHERE season=%s AND activity=%s''',
+                         (self.id, self.activity_id))
+        for team in self.cur.fetchall():
+            self.teams[team[1]] = Team(elo=team[4], glicko=team[5],
+                                        glicko_time=team[6],
+                                        side_1=team[7], side_2=team[8],
+                                        id=team[0])
         # Load Tournaments
-        # Load Rounds
+        self.cur.execute(f'''SELECT * FROM tournament WHERE season_id=%s''',
+                         (self.id, ))
+        for tournament in self.cur.fetchall():
+            self.tournaments[tournament[1]] = Tournament(None, id=tournament[0])
 
     def calculate_elo(self, tournament_name):
         """ Calculate the elo score change for a desired tournament
@@ -260,8 +272,10 @@ class Season:
                     VALUES(%s, %s)''', (self.id, self.cur.fetchone()[0]))
         self.conn.commit()
 
-        # Persist Tournaments and Rounds
+        # Persist Tournaments and Rounds (Tournaments are assumed to be immutable)
         for tournament_name, tournament in self.tournaments.items():
+            if tournament.id != -1:
+                continue
             self.cur.execute(f'''
                 INSERT INTO tournament(season_id, name) VALUES(%s, %s) RETURNING id''',
                 (self.id, tournament_name))
