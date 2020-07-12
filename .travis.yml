@@ -13,7 +13,7 @@ jobs:
   include:
     - stage: build
       script:
-        - eval $(aws ecr get-login --region us-east-1)
+        - eval $(aws ecr get-login --region us-east-2)
         - docker build Ranking/ -t $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
         - docker push $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
     - stage: test
