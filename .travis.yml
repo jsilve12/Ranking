@@ -13,7 +13,9 @@ jobs:
   include:
     - stage: build
       script:
+        - $(aws ecr get-login --region us-east-1)
         - docker build Ranking/ -t $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
+        - docker push $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
     - stage: test
       script:
         - echo 'hello world'
