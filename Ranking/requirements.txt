@@ -1,3 +1,2 @@
 psycopg2
 BeautifulSoup4
-urllib
