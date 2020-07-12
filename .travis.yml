@@ -16,7 +16,7 @@ jobs:
         - eval $(aws ecr get-login --no-include-email --region us-east-2)
         - docker build Ranking/ -t $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
         - docker tag $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT $WORKER_REPO:latest
-        - docker push $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT $WORKER_REPO:latest
+        - docker push $WORKER_REPO
     - stage: test
       script:
         - echo 'hello world'
