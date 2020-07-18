@@ -288,12 +288,13 @@ class Season:
                                 rounds)
                                 VALUES(
                                     %s,
-                                    ( SELECT id FROM team WHERE name=%s ),
-                                    ( SELECT id FROM team WHERE name=%s ),
+                                    ( SELECT id FROM team WHERE name=%s AND season = %s),
+                                    ( SELECT id FROM team WHERE name=%s AND season = %s),
                                     %s,
                                     %s)''',
-                                 (tournament_id, round['team_1'], round['team_2'],
-                                  round['result'], round['rounds']))
+                                 (tournament_id, round['team_1'], self.id,
+                                  round['team_2'], self.id, round['result'],
+                                  round['rounds']))
         self.conn.commit()
 
 # EOF
