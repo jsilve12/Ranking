@@ -104,7 +104,7 @@ def main():
     # Get the season numbers
     chess = Lichess()
     seasons = chess.get_seasons()
-    for season in [1]: #seasons:
+    for season in seasons:
         chess.set_season(season)
         chess.get_season()
 
