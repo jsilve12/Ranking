@@ -24,11 +24,6 @@ CREATE TABLE team(
   UNIQUE (name, season)
 );
 
-CREATE TABLE season_team(
-  season_id INT REFERENCES season(id) NOT NULL,
-  team_id INT REFERENCES team(id) NOT NULL
-);
-
 CREATE TABLE tournament(
   id SERIAL PRIMARY KEY,
   name TEXT,

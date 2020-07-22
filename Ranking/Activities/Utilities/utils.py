@@ -36,7 +36,7 @@ def parseDB(filename='db.config', section='postgresql'):
 
 def get_all_seasons():
     """ Gets all the seasons """
-    conn = psycopg2.connect(**parseDB('configs/local/db.config'))
+    conn = psycopg2.connect(**parseDB('../configs/db.config'))
     cur = conn.cursor()
     cur.execute('SELECT name FROM season')
     return cur.fetchall()
@@ -157,7 +157,7 @@ class Season:
         """
         self.teams = {}
         self.tournaments = {}
-        self.conn = psycopg2.connect(**parseDB('configs/local/db.config'))
+        self.conn = psycopg2.connect(**parseDB('configs/db.config'))
         self.activity = activity
         self.name = name
         self.cur = self.conn.cursor()
@@ -267,9 +267,6 @@ class Season:
                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s) RETURNING id''',
                                  (team_name, team.elo, team.glicko, team.glick_time,
                                   team.side_1, team.side_2, self.activity_id, self.id))
-                self.cur.execute(f'''
-                    INSERT INTO season_team(season_id, team_id)
-                    VALUES(%s, %s)''', (self.id, self.cur.fetchone()[0]))
         self.conn.commit()
 
         # Persist Tournaments and Rounds (Tournaments are assumed to be immutable)
