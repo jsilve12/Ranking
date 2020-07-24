@@ -15,13 +15,28 @@ app = FastAPI()
 
 
 app.include_router(
-    seasons.router,
-    prefix='/api/seasons/',
-    tags=['seasons']
+    activity.router,
+    prefix='/api/activity',
+    tags=['activity']
+)
+app.include_router(
+    season.router,
+    prefix='/api/season',
+    tags=['season']
 )
 app.include_router(
     teams.router,
-    prefix='/api/teams/',
-    tags=['teams']
+    prefix='/api/teams',
+    tags=['team']
+)
+app.include_router(
+    tournaments.router,
+    prefix='/api/tournaments',
+    tags=['tournament']
+)
+app.include_router(
+    round.router,
+    prefix='/api/round',
+    tags=['round']
 )
 # EOF
