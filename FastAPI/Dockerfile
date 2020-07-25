@@ -5,3 +5,4 @@ RUN apk update && apk add --no-cache postgresql-dev gcc python3-dev musl-dev
 RUN pip3 install -r /app/requirements.txt
 
 COPY . /app/
+CMD uvicorn app.main:app

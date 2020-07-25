@@ -11,25 +11,25 @@ async def get_activities():
 
 
 @router.get('/{activity_id}')
-async def get_activity(activity_id):
+async def get_activity(activity_id: int):
     return get_cursor().execute('SELECT * FROM activity WHERE id=%s',
                                 (activity_id)).fetchall()
 
 
 @router.get('/{activity_id}/season')
-async def get_seasons(activity_id):
+async def get_seasons(activity_id: int):
     return get_cursor().execute(
         'SELECT * FROM season WHERE activity_id=%s', (activity_id, )).fetchall()
 
 
 @router.get('/{activity_id}/teams')
-async def get_teams(activity_id):
+async def get_teams(activity_id: int):
     return get_cursor().execute(
         'SELECT * FROM team WHERE activity=%s', (activity_id, )).fetchall()
 
 
 @router.get('/{activity_id}/tournaments')
-async def get_tournaments(activity_id):
+async def get_tournaments(activity_id: int):
     return get_cursor().execute(
         f'''SELECT * FROM tournament
         LEFT JOIN season ON season.id=tournament.id
@@ -38,7 +38,7 @@ async def get_tournaments(activity_id):
 
 
 @router.get('/{activity_id}/rounds')
-async def get_rounds(activity_id):
+async def get_rounds(activity_id: int):
     return get_cursor().execute(
     f'''SELECT * FROM round
     LEFT JOIN tournament ON tournament.id=round.tournament_id

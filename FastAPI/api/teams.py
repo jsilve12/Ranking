@@ -11,13 +11,13 @@ async def get_teams():
 
 
 @router.get('/{team_id}')
-async def get_team():
+async def get_team(team_id: int):
     return get_cursor().execute('SELECT * FROM team WHERE id=%s',
                                 (team_id, )).fetchall()
 
 
 @router.get('/{team_id}/tournaments')
-async def get_tournaments(team_id):
+async def get_tournaments(team_id: int):
     return get_cursor().execute(
         f'''SELECT * FROM tournament
         LEFT JOIN round ON tournament.id=round.tournament_id
@@ -27,7 +27,7 @@ async def get_tournaments(team_id):
 
 
 @router.get('/{team_id}/rounds')
-async def get_rounds(team_id):
+async def get_rounds(team_id: int):
     return get_cursor().execute(
         f'''SELECT * FROM round
         LEFT JOIN team ON (round.team_1=team.id OR round.team_2=team.id)

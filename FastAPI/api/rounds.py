@@ -11,7 +11,7 @@ async def get_rounds():
 
 
 @router.get('/{round_id}')
-async def get_round(round_id):
+async def get_round(round_id: int):
     return get_cursor().execute('SELECT * FROM round WHERE id=%s',
                                 (round_id, )).fetchall()
 

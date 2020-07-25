@@ -1,7 +1,7 @@
 """Origin for FastAPI."""
 
 from fastapi import Depends, FastAPI, Header, HTTPException
-from .api import *
+from .api import activity, season, rounds, teams, tournaments
 
 app = FastAPI()
 
@@ -33,7 +33,7 @@ app.include_router(
     tags=['tournament']
 )
 app.include_router(
-    round.router,
+    rounds.router,
     prefix='/api/round',
     tags=['round']
 )
