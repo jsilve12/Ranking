@@ -5,19 +5,27 @@ servies:
 env:
   global:
     WORKER_REPO=642498794654.dkr.ecr.us-east-2.amazonaws.com/ranking/worker
+    API_REPO=642498794654.dkr.ecr.us-east-2.amazonaws.com/ranking/api
 
 before_install:
   - pip install awscli
 
 jobs:
   include:
-    - stage: build
+    - stage: build-ranker
       script:
         - eval $(aws ecr get-login --no-include-email --region us-east-2)
         - docker pull $WORKER_REPO:latest
         - docker build Ranking/ -t $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
         - docker tag $WORKER_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT $WORKER_REPO:latest
         - docker push $WORKER_REPO
+    - stage: build-API
+      script:
+        - eval $(aws ecr get-login --no-include-email --region us-east-2)
+        - docker pull $API_REPO:latest
+        - docker build FastAPI\ (Backend)/ -t $API_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
+        - docker tag $API_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT $API_REPO:latest
+        - docker push $API_REPO
     - stage: test
       script:
         - echo 'hello world'
