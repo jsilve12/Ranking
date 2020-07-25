@@ -1,9 +1,7 @@
 """Origin for FastAPI."""
 
 from fastapi import Depends, FastAPI, Header, HTTPException
-
-from .Routers import *
-from .API import *
+from .api import *
 
 app = FastAPI()
 
