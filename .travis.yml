@@ -22,8 +22,8 @@ jobs:
     - stage: build-API
       script:
         - eval $(aws ecr get-login --no-include-email --region us-east-2)
-        - docker pull $API_REPO:latest
-        - docker build FastAPI\ (Backend)/ -t $API_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
+        #- docker pull $API_REPO:latest
+        - docker build FastAPI/ -t $API_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT
         - docker tag $API_REPO:$TRAVIS_BRANCH-$TRAVIS_COMMIT $API_REPO:latest
         - docker push $API_REPO
     - stage: test
