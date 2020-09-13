@@ -2,3 +2,4 @@
 db.config
 results.txt
 FastAPI/node_modules/*
+FastAPI/static/bundle.js

@@ -1,9 +1,12 @@
 """Origin for FastAPI."""
 
 from fastapi import Depends, FastAPI, Header, HTTPException
+from fastapi.staticfiles import StaticFiles
 from .api import activity, season, rounds, teams, tournaments
+from .website import index
 
 app = FastAPI()
+app.mount('/static', StaticFiles(directory='FastAPI/static'), name='static')
 
 
 # async def get_token_header(x_token: str = Header(...)):
@@ -36,5 +39,9 @@ app.include_router(
     rounds.router,
     prefix='/api/round',
     tags=['round']
+)
+app.include_router(
+    index.app,
+    tags=['webpage']
 )
 # EOF

@@ -1,13 +1,12 @@
 """ Main Website Landing Page """
-from fastapi import APIRouter
-from fastapi.response import HTMLResponses
-from fastapi.staticfiles import StaticFiles
+from fastapi import APIRouter, Request
+from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
+import os
 
-router = APIRouter()
-app.mount('/static', StaticFiles(directory='static'), name='static')
-templates = Jinja2Templates(directory='templates')
+app = APIRouter()
+templates = Jinja2Templates(directory='FastAPI/templates')
 
-@router.get('/{activity_id}/{season_id}')
-async def get_season(activity_id: int, season_id: int):
-    return templates.TemplateResponse('index.html', {'activity': activity_id, 'season': season_id})
+@app.get('/{activity_id}/{season_id}', response_class=HTMLResponse)
+async def get_season(activity_id: int, season_id: int, request: Request):
+    return templates.TemplateResponse('index.html', {'activity': activity_id, 'season': season_id, 'request': request})
