@@ -22,7 +22,7 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar navbar-dark bg-dark">
         <div className="container">
-          <a href="/1/1" class="navbar-brand bg-success text-dark rounded p-2">Ranking</a>
+          <a href="/1/1" className="navbar-brand bg-success text-dark rounded p-2">Ranking</a>
           <ul className='navbar-nav ml-auto'>
             {this.state.Activities.map(Activity => (
               <li className='nav-item'>

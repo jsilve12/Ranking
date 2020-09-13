@@ -23,16 +23,16 @@ class Table extends React.Component {
   render() {
     return (
       <section id="teams">
-        <div class="container col-11">
-          <div class="row">
-            <div class="col">
-              <div class="card">
-                <table class="table table-striped">
-                  <thead class="thead-dark">
+        <div className="container col-11">
+          <div className="row">
+            <div className="col">
+              <div className="card">
+                <table className="table table-striped">
+                  <thead className="thead-dark">
                     <tr>
-                      <th>Name</th>
-                      <th>Elo</th>
-                      <th>Glicko</th>
+                      <th>Team</th>
+                      <th>Rating</th>
+                      <th>Rating Variance</th>
                       <th>Side 1</th>
                       <th>Side 2</th>
                     </tr>
@@ -58,8 +58,8 @@ class Table extends React.Component {
   }
 };
 Table.propTypes = {
-  activity: PropTypes.number.isRequired,
-  season: PropTypes.number.isRequired,
+  activity: PropTypes.string.isRequired,
+  season: PropTypes.string.isRequired,
 };
 const Tab = document.getElementById('table');
 if (Tab)
