@@ -24,12 +24,12 @@ app.include_router(
 )
 app.include_router(
     teams.router,
-    prefix='/api/teams',
+    prefix='/api/team',
     tags=['team']
 )
 app.include_router(
     tournaments.router,
-    prefix='/api/tournaments',
+    prefix='/api/tournament',
     tags=['tournament']
 )
 app.include_router(

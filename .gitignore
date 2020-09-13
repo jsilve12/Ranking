@@ -1,3 +1,4 @@
 *__pycache__*
 db.config
 results.txt
+FastAPI/node_modules/*

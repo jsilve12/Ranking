@@ -1,3 +1,8 @@
+import psycopg2
+import psycopg2.extras
+from configparser import ConfigParser
+
+
 def parseDB(filename='db.config', section='postgresql'):
     """ Create a connection to a database
 
@@ -21,7 +26,18 @@ def parseDB(filename='db.config', section='postgresql'):
     return db
 
 def get_cursor():
-    """ Gets all the seasons """
-    conn = psycopg2.connect(**parseDB('../configs/db.config'))
-    cur = conn.cursor()
+    """ Gets all the seasons NOTE: Distinct from worker cursor because of the factory function"""
+    conn = psycopg2.connect(**parseDB('configs/db.config'))
+    cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     return cur
+
+def use_cursor(cursor, query, args=()):
+    """ Executes and fetches the results of a query
+
+    args:
+        cursor (Cursor)
+        query (string): The query being run
+        args (tuple): The cursor argument
+    """
+    cursor.execute(query, args)
+    return cursor.fetchall()
