@@ -10,7 +10,7 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="bg-dark text-white mt-5 p-5" id="main-footer">
+      <footer className="bg-dark text-white pt-4 p-2" id="main-footer">
         <div className="container">
           <div className="row">
             <div className="col">

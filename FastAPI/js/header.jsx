@@ -37,17 +37,17 @@ class Header extends React.Component {
         <div className="container col-11">
           <div className="row">
             <div className="col">
-              <h1 className='text-center p-3'>{ this.state.Activity } Ratings</h1>
+              <h1 className='text-center mt-3 '>{ this.state.Activity } Ratings</h1>
               <div className='col-3-sm form-inline form-group'>
                 <label for='season' className='text-right h5 p-2'>Season</label>
                 <select
-                  value={'/'.concat(this.state.Activity_Id, '/', this.state.Season)}
+                  value={'/activity/'.concat(this.state.Activity_Id, '/', this.state.Season)}
                   className='form-control'
                   onChange={event => {location = event.target.value;}}>
                     {this.state.Seasons.map(Season => (
                       <option
                         id={'Season '.concat(Season['id'])}
-                        value={'/'.concat(this.state.Activity_Id, '/', Season['id'])}>
+                        value={'/activity/'.concat(this.state.Activity_Id, '/', Season['id'])}>
                           {Season['id']}
                       </option>
                     ))}

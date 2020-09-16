@@ -40,7 +40,7 @@ class Table extends React.Component {
                   <tbody>
                     {this.state.Teams.map(Team => (
                       <tr>
-                        <td>{Team['name']}</td>
+                        <td><a href={'/teams/'.concat(Team['id'])}>{Team['name']}</a></td>
                         <td>{Team['elo']}</td>
                         <td>{Team['glicko']}</td>
                         <td>{Team['side_1']}</td>

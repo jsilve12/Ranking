@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./js/navbar.jsx', './js/table.jsx', './js/header.jsx', './js/footer.jsx'],
+  entry: ['./js/team.jsx', './js/navbar.jsx', './js/table.jsx', './js/header.jsx', './js/footer.jsx'],
   output: {
     path: path.join(__dirname, '/static/'),
     filename: 'bundle.js',

@@ -7,6 +7,10 @@ import os
 app = APIRouter()
 templates = Jinja2Templates(directory='FastAPI/templates')
 
-@app.get('/{activity_id}/{season_id}', response_class=HTMLResponse)
+@app.get('/activity/{activity_id}/{season_id}', response_class=HTMLResponse)
 async def get_season(activity_id: int, season_id: int, request: Request):
     return templates.TemplateResponse('index.html', {'activity': activity_id, 'season': season_id, 'request': request})
+
+@app.get('/teams/{team_id}', response_class=HTMLResponse)
+async def get_team(team_id: int, request: Request):
+    return templates.TemplateResponse('team.html', {'team': team_id, 'request': request})

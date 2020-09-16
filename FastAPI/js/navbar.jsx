@@ -22,11 +22,11 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar navbar-dark bg-dark">
         <div className="container">
-          <a href="/1/1" className="navbar-brand bg-success text-dark rounded p-2">Ranking</a>
+          <a href="/activity/1/1" className="navbar-brand bg-success text-dark rounded p-2">Ranking</a>
           <ul className='navbar-nav ml-auto'>
             {this.state.Activities.map(Activity => (
               <li className='nav-item'>
-                <a href={'/'.concat(Activity['id']).concat('/1')} className="nav-link text-light">{Activity['name']}</a>
+                <a href={'/activity/'.concat(Activity['id'], '/1')} className="nav-link text-light">{Activity['name']}</a>
               </li>
             ))}
           </ul>

@@ -31,9 +31,12 @@ async def get_tournaments(team_id: int):
 async def get_rounds(team_id: int):
     return use_cursor(
         get_cursor(),
-        f'''SELECT round.* FROM round
-        LEFT JOIN team ON (round.team_1=team.id OR round.team_2=team.id)
-        WHERE team.id=%s''',
-        (team_id, ))
+        f'''SELECT
+            round.*, team1.name AS name1, team1.elo AS elo1, team2.name AS name2, team2.elo as elo2
+        FROM round
+        LEFT JOIN team AS team1 ON (round.team_1=team1.id)
+        LEFT JOIN team AS team2 ON (round.team_2=team2.id)
+        WHERE team1.id=%s or team2.id=%s''',
+        (team_id, team_id,))
 
 # EOF
