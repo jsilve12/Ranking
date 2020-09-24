@@ -1,20 +1,22 @@
-apiVersion: batch/v1 # batch/v1beta
-kind: Job #CronJob
+apiVersion: batch/v1beta1
+kind: CronJob
 metadata:
   name: data-pull-cron
   namespace: ranking
 spec:
-  template:
+  schedule: "0 0 1 * *"
+  jobTemplate:
     spec:
-      containers:
-        - name: chess
-          image: 642498794654.dkr.ecr.us-east-2.amazonaws.com/ranking/worker:master-59ff251fb1097a645cb93ef7ee0740602647cbed
-      restartPolicy: OnFailure
-# spec:
-#   schedule: "0 0 1 * *"
-#   jobTemplate:
-#     spec:
-#       containers:
-#         - name: chess
-#           image:
-#       restartPolicy: OnFailure
+      template:
+        spec:
+          containers:
+            - name: chess
+              image: gcr.io/personal-project-289714/ranking-cron:202009232315
+              volumeMounts:
+                - name: db
+                  mountPath: /configs
+          restartPolicy: OnFailure
+          volumes:
+            - name: db
+              secret:
+                secretName: postgres-ranking-0923

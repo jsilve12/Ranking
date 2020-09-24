@@ -8,8 +8,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8000
+    - port: 31071
       targetPort: 8000
-      nodePort: 31071
+      protocol: TCP
+      name: http
   selector:
     app: api

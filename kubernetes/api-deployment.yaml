@@ -15,6 +15,13 @@ spec:
     spec:
       containers:
         - name: api
-          image: 642498794654.dkr.ecr.us-east-2.amazonaws.com/ranking/api:latest
+          image: gcr.io/personal-project-289714/ranking-app:202009141224
+          volumeMounts:
+            - name: db
+              mountPath: /configs
           ports:
             - containerPort: 8000
+      volumes:
+        - name: db
+          secret:
+            secretName: postgres-ranking-0923
