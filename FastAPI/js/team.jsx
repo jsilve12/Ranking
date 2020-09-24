@@ -68,7 +68,7 @@ class Team extends React.Component {
                       {this.state.Rounds.map(Team => (
                         <tr>
                           <td><a href={'/teams/'.concat(Team['team_1'])}>{Team['name1']}</a> ({Team['elo1']})</td>
-                          <td><a href={'/teams/'.concat(Team['team_1'])}>{Team['name1']}</a> ({Team['elo2']})</td>
+                          <td><a href={'/teams/'.concat(Team['team_2'])}>{Team['name2']}</a> ({Team['elo2']})</td>
                           <td>{Team['result']}</td>
                           <td>{Team['rounds']}</td>
                         </tr>
